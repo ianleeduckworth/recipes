@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route } from "react-router-dom";
+import { Routes } from "./data/routes";
+import Home from "./pages/landing/home";
+import Navbar from "./components/navbar/navbar";
+import RecipeList from "./pages/recipeList/recipeList";
+import RecipePage from "./pages/recipePage/recipePage";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends React.Component {
+  render(): React.ReactElement {
+    return (
+      <>
+        <Navbar />
+        <Route path={Routes.home} component={Home} exact />
+        <Route path={Routes.recipes} component={RecipeList} exact />
+        <Route path="/recipe/:recipe_id" component={RecipePage} />
+      </>
+    );
+  }
 }
 
 export default App;
