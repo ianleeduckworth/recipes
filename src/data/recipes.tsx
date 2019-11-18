@@ -36,7 +36,7 @@ const recipes: Recipe[] = [
     id: 2,
     title: "Grilled Cheese",
     blurb:
-      "Bread, butter and Cheddar cheese - here's a way to make this classic sandwich in a nonstick pan.",
+      "Bread, butter and cheddar cheese - here's a way to make this classic sandwich in a nonstick pan.",
     cookTime: "30 minutes",
     servings: 2,
     ingredients: [
