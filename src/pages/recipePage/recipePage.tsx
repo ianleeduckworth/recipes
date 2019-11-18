@@ -24,7 +24,7 @@ class RecipePage extends React.Component<any, RecipePageState> {
         <div className="row pt-4">
           <div className="col-12 col-lg-4 pb-3">
             <div className="card">
-              <div className="card-header">Ingredients</div>
+              <div className="card-header font-weight-bold">Ingredients</div>
               <ul className="list-group list-group-flush">
                 {recipe.ingredients.map(item => (
                   <div key={item}>
@@ -36,7 +36,7 @@ class RecipePage extends React.Component<any, RecipePageState> {
           </div>
           <div className="col-12 col-lg-8 pb-3">
             <div className="card">
-              <div className="card-header">Steps</div>
+              <div className="card-header font-weight-bold">Steps</div>
               <div className="card-body">
                 <p>{recipe.steps}</p>
               </div>

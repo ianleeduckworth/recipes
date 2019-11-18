@@ -1,6 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
+import "./recipeList.scss";
 
 export interface RecipeItem {
   id: number;
@@ -31,7 +32,7 @@ class RecipeList extends React.Component<RecipeListProps> {
               {this.props.recipes.map(item => (
                 <div
                   key={item.id}
-                  className="my-3 card clickable"
+                  className="my-3 card clickable recipe-list-card"
                   onClick={() => this.handleClick(item.id)}
                 >
                   <div className="card-body">
