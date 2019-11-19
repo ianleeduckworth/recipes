@@ -21,6 +21,11 @@ class RecipePage extends React.Component<any, RecipePageState> {
       <div className="container">
         <h1 className="py-3 text-center">{recipe.title}</h1>
         <h5 className="font-italic">{recipe.blurb}</h5>
+        {recipe.source && (
+          <a rel="noopener noreferrer" target="_blank" href={recipe.source}>
+            Source
+          </a>
+        )}
         <div className="row pt-4">
           <div className="col-12 col-lg-4 pb-3">
             <div className="card">
