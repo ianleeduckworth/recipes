@@ -94,7 +94,7 @@ const recipes: Recipe[] = [
       "1 small cabbage cut into wedges",
       "2 tbsp molasses"
     ],
-    steps: `Place potatoes, onions, carrots, and bay leaf in crock pot. Trim excess fat from brisket; put meat on top of veges. Mix molasses with beer and pour over all. Cover and cook on LOW heat setting 9-11 hours. If desired, place cabbage wedges on top of meat. to steam for last hour. Slice brisket thinly across grain (let it cool 5- 10 minutes for easier slicing). Serve with vegetables.`
+    steps: `Place potatoes, onions, carrots, and bay leaf in crock pot. Trim excess fat from brisket; put meat on top of vegies. Mix molasses with beer and pour over all. Cover and cook on LOW heat setting 9-11 hours. If desired, place cabbage wedges on top of meat. to steam for last hour. Slice brisket thinly across grain (let it cool 5- 10 minutes for easier slicing). Serve with vegetables.`
   },
   {
     id: 5,
