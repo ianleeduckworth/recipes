@@ -1,0 +1,11 @@
+.recipe-list {
+  &-card {
+    background-color: var(--white);
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: var(--light);
+      transition: background-color 0.3s linear;
+    }
+  }
+}
