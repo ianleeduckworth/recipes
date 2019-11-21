@@ -5,8 +5,13 @@ export interface Recipe {
   cookTime?: string;
   servings?: number;
   ingredients: string[];
-  steps: string;
+  steps: string | Step[];
   source?: string;
+}
+
+export interface Step {
+  header: string;
+  content: string;
 }
 
 const recipes: Recipe[] = [
@@ -338,6 +343,46 @@ const recipes: Recipe[] = [
       "1 ounce feta cheese, crumbled"
     ],
     steps: `Heat oil in a large saucepan over medium heat. Add mushroom. Cook, stirring occasionally, until tender and mushrooms just release their liquid (about 6 minutes). Stir in orzo, tomatoes, chicken broth and water. Simmer covered, stirring occasionally, until orzo is tender and most of the liquid is absorbed (about 9 minutes). Stir in Feta cheese and serve immediately.`
+  },
+  {
+    id: 16,
+    title: "Binging With Babish Green Bean Casserole",
+    blurb: `Babish knows best when it comes to great cooking.  This fresh green been casserole is a huge step up over the canned kind you grew up with.`,
+    cookTime: "1 hour 30 minutes",
+    servings: 6,
+    ingredients: [
+      "2 onions",
+      "1 cup buttermilk",
+      "2 -3 cups all purpose flour",
+      "8 oz cremeni mushrooms",
+      "2 cloves crushed garlic",
+      "1 1/2 cups chicken stock",
+      "1 cup heavy cream",
+      "1.5 pounds green beans",
+      "3 tbsp butter",
+      "Splash of whiskey",
+      "Vegetable oil",
+      "Dash of soy sauce",
+      "Salt",
+      "Pepper"
+    ],
+    steps: [
+      {
+        header: "Fried Onions",
+        content:
+          "Mandolin 2 large onions into small slivers.  Soak in buttermilk for 15 minutes and drain.  Coat in flour, use seiv to remove excess.  Fry coated onions in oil for 7 to 9 minutes.  Remove from pan, strain and season with salt."
+      },
+      {
+        header: "Cream of Mushroom Soup",
+        content:
+          "Stem, crush, and finely chop mushrooms.  Saute in butter and add a pinch of salt.  Add a heaping tablespoon of flour and stir in for 1 minute.  Add 2 cloves of crushed garlic and saute for about 30 seconds.  Deglaze with whiskey and add chicken stock and heavy cream. Add a dash of soy sauce and simmer until thick."
+      },
+      {
+        header: "Green Beans and Assembly",
+        content:
+          "Cut ends off of green beans and cut into 1 inch pieces.  Par boil for 2 minutes then shock in an ice bath.  Mix with cream of mushroom soup and half of the onions.  Pour into buttered dish and bake at 350 degrees for 15 to 20 minutes.  Add remainder of the onions to the top and cook for another 5 to 10 minutes."
+      }
+    ]
   }
 ];
 

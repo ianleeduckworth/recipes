@@ -10,6 +10,23 @@ class RecipePage extends React.Component<any, RecipePageState> {
     const id = parseInt(this.props.match.params.recipe_id);
     const recipe = recipes.filter(x => x.id === id)[0];
 
+    const renderSteps = () => {
+      if (typeof recipe.steps === "string") {
+        return <p>{recipe.steps}</p>;
+      } else {
+        return (
+          <div>
+            {recipe.steps.map(item => (
+              <div className="pb-2">
+                <h6 className="font-weight-bold">{item.header}</h6>
+                <p>{item.content}</p>
+              </div>
+            ))}
+          </div>
+        );
+      }
+    };
+
     if (!recipe)
       return (
         <div className="container">
@@ -42,9 +59,7 @@ class RecipePage extends React.Component<any, RecipePageState> {
           <div className="col-12 col-lg-8 pb-3">
             <div className="card">
               <div className="card-header font-weight-bold">Steps</div>
-              <div className="card-body">
-                <p>{recipe.steps}</p>
-              </div>
+              <div className="card-body">{renderSteps()}</div>
             </div>
           </div>
         </div>
