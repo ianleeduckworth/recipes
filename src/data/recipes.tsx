@@ -383,6 +383,229 @@ const recipes: Recipe[] = [
           "Cut ends off of green beans and cut into 1 inch pieces.  Par boil for 2 minutes then shock in an ice bath.  Mix with cream of mushroom soup and half of the onions.  Pour into buttered dish and bake at 350 degrees for 15 to 20 minutes.  Add remainder of the onions to the top and cook for another 5 to 10 minutes."
       }
     ]
+  },
+  {
+    id: 17,
+    title: "Crock Pot Mexican Casserole",
+    blurb: `Crock Pot Mexican Casserole is protein-packed with quinoa, black beans, and ground chicken or turkey. This Mexican casserole is healthy, gluten free comfort food, and one of the best crockpot recipes for Taco Tuesdays or Cinco de Mayo!`,
+    cookTime: "6 hours 15 minutes",
+    source: "https://www.wellplated.com/crock-pot-mexican-casserole/",
+    servings: 8,
+    ingredients: [
+      "1 tbsp extra-virgin olive oil",
+      "1 pound ground turkey",
+      "1 medium yellow onion, diced",
+      "1 cup uncooked quinoa",
+      "2 cans red enchilada sauce (10 ounce cans)",
+      "1 can black beans (15 ounces), drained and rinsed",
+      "1 can fire-roasted diced tomatoes in their juices (15 ounces)",
+      "1 cup corn kernels, fresh or frozen",
+      "1 red bell pepper, cored and diced",
+      "1 green bell pepper, cored and diced",
+      "2 tbsp chili powder",
+      "1 tbsp ground cumin",
+      "1 tsp garlic powder",
+      "1/2 cup water",
+      "1 cup shredded Mexican blend cheese, divided",
+      "Chopped fresh cilantro (for serving)"
+    ],
+    steps: [
+      {
+        header: "Browning the Turkey",
+        content:
+          "Heat the olive oil in a large skillet or Dutch oven over medium high. Add the turkey and onion. Cook and stir, breaking up the turkey as you go, until the turkey is no longer pink, about 5 minutes. Transfer to the bottom of a large slow cooker."
+      },
+      {
+        header: "Adding the Vegetables",
+        content:
+          "To the slow cooker, add the quinoa, enchilada sauce, black beans, tomatoes, corn, red bell pepper, green bell pepper, chili powder, cumin, garlic powder, and 1/2 cup water. Stir to combine, then cover and cook on high for 2 1/2 to 3 hours or low for 5 to 6 hours, until the liquid is absorbed and the quinoa is tender."
+      },
+      {
+        header: "Assembly",
+        content:
+          "Remove the lid and stir. Taste and adjust any seasonings as desired. Stir in 1/2 cup of the shredded cheese, then sprinkle the remaining cheese over the top. Cover and cook on high until the cheese melts, about 10 to 15 minutes. Serve hot with any desired toppings."
+      }
+    ]
+  },
+  {
+    id: 18,
+    title: "Crockpot Chicken and Wild Rice Soup",
+    blurb: `Pure creamy comfort food made right in your crockpot! So quick, easy, and hearty with veggies, rice and chicken!`,
+    cookTime: "8 hours 15 minutes",
+    source:
+      "https://damndelicious.net/2016/12/09/slow-cooker-chicken-wild-rice-soup/",
+    servings: 4,
+    ingredients: [
+      "1 1/2 pounds boneless skinless chicken breasts",
+      "Kosher salt and freshly ground black pepper to taste",
+      "6 cups chicken stock",
+      "1 cup wild rice",
+      "3 cloves garlic, minced",
+      "1 onion, diced",
+      "3 carrots, peeled and diced",
+      "3 stalks celery, diced",
+      "1/2 tsp dried thyme",
+      "1/2 tsp dried rosemary",
+      "2 bay leaves",
+      "1 pound cremini mushrooms, thinly sliced",
+      "1/4 cup unsalted butter",
+      "1/4 cup all-purpose flour",
+      "1 cup milk",
+      "1 cup half and half",
+      "2 tbsp chopped fresh parsley"
+    ],
+    steps: `Season chicken with salt and pepper, to taste. Place chicken into a 6-qt slow cooker. Stir in chicken stock, wild rice, garlic, onion, carrots, celery, thyme, rosemary and bay leaves; season with salt and pepper, to taste. Cover and cook on low heat for 6-8 hours. Add mushrooms during the last 30 minutes of cooking time. Remove chicken from the slow cooker and shred, using two forks. Melt butter in a saucepan over medium heat. Whisk in flour until lightly browned, about 1 minute. Whisk in milk and half and half, and cook, whisking constantly, until slightly thickened, about 4-5 minutes; season with salt and pepper, to taste. Stir chicken and milk mixture into the slow cooker. If the soup is too thick, add more half and half as needed until desired consistency is reached. Serve immediately, garnished with parsley, if desired.`
+  },
+  {
+    id: 19,
+    title: "Crockpot Chicken and Dumplings",
+    blurb: `Q: Is there anything more comforting than chicken & dumplings? A: Nope!`,
+    cookTime: "4 hours 20 minutes",
+    source:
+      "https://www.delish.com/cooking/recipe-ideas/recipes/a53818/easy-crock-pot-chicken-and-dumplings-recipe/",
+    servings: 0,
+    ingredients: [
+      "1 onion, chopped",
+      "1 1/4 lb. boneless skinless chicken breasts",
+      "1 tsp dried oregano",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "2 (10.5-oz.) cans cream of chicken soup",
+      "2 cups low-sodium chicken broth",
+      "4 sprigs fresh thyme",
+      "1 bay leaf",
+      "2 stalks celery, chopped",
+      "2 large carrots, peeled and chopped",
+      "1 cups frozen peas, thawed",
+      "3 cloves garlic, minced",
+      "1 (16.3-oz.) can refrigerated biscuits"
+    ],
+    steps: [
+      {
+        header: "Prepping the Onions",
+        content:
+          "Scatter onion in the bottom of a large slow cooker then top with chicken. Season with oregano, salt, and pepper."
+      },
+      {
+        header: "Starting in the Slow Cooker",
+        content:
+          "Pour over soup and broth then add thyme and bay leaf. Cover and cook on high until the chicken is cooked through, about 3 hours."
+      },
+      {
+        header: "Finishing Touches",
+        content:
+          "Discard thyme and bay leaf, then shred chicken with two forks. Stir in celery, carrots, peas, and garlic. Cut biscuits into small pieces, then stir into chicken mixture. Spoon liquid over any biscuits at the top. Cook on high until vegetables are tender and biscuits are cooked through, about 1 hour more."
+      }
+    ]
+  },
+  {
+    id: 20,
+    title: "Quick and Easy Empanadas",
+    blurb: `This is such a simple recipe w/ just a few ingredients I almost always have on hand. It's a quick dinner w/ a green salad.`,
+    cookTime: "45 minutes",
+    source: "https://www.food.com/recipe/quick-and-easy-empanadas-133297",
+    servings: 12,
+    ingredients: [
+      "1 lb ground beef",
+      "1 garlic clove",
+      "1 tsp salt",
+      "1 (15 ounce) can fresh cut corn, drained",
+      "1/2 cup chopped onion",
+      "8 ounces grated cheddar cheese",
+      "1 cup salsa",
+      "2 (16 ounce) cans large refrigerated biscuits"
+    ],
+    steps: `Brown the ground beef in a frying pan adding the salt and pepper just before done. Let the beef cool. In a large bowl mix the corn, onions, cheese, and salsa, then add the cooled beef mixing carefully so not to break up all the cheese. Roll the biscuits out flat to about 2-1/2 times their size. Place approx 1/3 cup filling on one side of the center of the circle lengthwise. Fold the dough over the filling like a turn over and crimp the edges like a pie crust. Be careful not to tear the dough, and to seal the edges completely or your filling will come out! depending on how much filling is used will determine how many biscuits you will use. Place on slightly greased cookie sheet and bake at 375 till lightly browned.`
+  },
+  {
+    id: 21,
+    title: "Asian Quinoa Meatballs",
+    blurb: `Healthy, nutritious and packed with so much flavor. Perfect as an appetizer or a light dinner!`,
+    cookTime: "35 minutes",
+    source: "https://damndelicious.net/2014/10/15/asian-quinoa-meatballs/",
+    servings: 0,
+    ingredients: [
+      "1 pound ground turkey",
+      "3/4 cup cooked quinoa",
+      "3 cloves garlic, minced",
+      "2 green onions, thinly sliced",
+      "1 large egg",
+      "1 tbsp soy sauce",
+      "2 tsp sesame oil",
+      "1 tsp sriracha, or more, to taste",
+      "Kosher salt and freshly ground black pepper, to taste",
+      "1/2 tsp sesame seeds",
+      "1/4 cup soy sauce",
+      "2 tbsp rice vinegar",
+      "1 tbsp freshly grated ginger",
+      "1 tbsp brown sugar, packed",
+      "1 tsp sesame oil",
+      "1 tsp Sriracha, or more, to taste",
+      "2 tsp cornstarch"
+    ],
+    steps: `Preheat oven to 400 degrees F. Lightly oil a 9×13 baking dish or coat with nonstick spray. In a large bowl, combine ground turkey, quinoa, garlic, onions, egg, soy sauce, sesame oil, Sriracha, salt and pepper, to taste. Using a wooden spoon or clean hands, stir until well combined. Roll the mixture into 1 1/4-to-1 1/2-inch meatballs, forming about 18-20 meatballs. Place meatballs onto the prepared baking dish and bake for 18-20 minutes, or until all sides are browned and meatballs are cooked through. To make the sauce, whisk together soy sauce, rice vinegar, ginger, sugar, sesame oil, Sriracha and 1/2 cup water in a small saucepan over medium high heat. In a small bowl, whisk together cornstarch and 1 tablespoon water. Stir into soy sauce mixture until thickened, about 2 minutes. Serve meatballs immediately with sauce, garnished with green onion and sesame seeds.`
+  },
+  {
+    id: 22,
+    title: "Healthier Crockpot Chicken and Dumplings",
+    blurb: `This is an easy slow cooker recipe that cooks while you are at work! We added more veggies and used natural (not condensed) soup to make this recipe healthier.`,
+    cookTime: "5 hours 45 minutes",
+    source:
+      "https://www.allrecipes.com/recipe/222117/healthier-slow-cooker-chicken-and-dumplings/?internalSource=recipe%20hub&referringId=17708&referringContentType=recipe%20hub&clickId=cardslot%2065",
+    servings: 8,
+    ingredients: [
+      "4 skinless, boneless chicken breast halves",
+      "2 tbsp butter",
+      "2 cups natural cream of chicken soup",
+      "1 onion, finely diced",
+      "3 carrots, sliced",
+      "10 ounces refrigerated reduced-fat biscuit dough, torn into pieces",
+      "1 cup frozen peas"
+    ],
+    steps: `Place chicken, butter, cream of chicken soup, and onion in a slow cooker. Cover and cook on High for 5 to 6 hours. Stir in carrots after 5 hours of cooking. Place torn biscuit dough in slow cooker 30 minutes before serving. Cook until dough is no longer raw in the center, about 25 minutes. Lift edges of biscuits and stir in peas. Let stand until warm, about 10 minutes, before serving.`
+  },
+  {
+    id: 23,
+    title: "Peppery Whole Wheat Pasta with Wilted Chard",
+    blurb: `This recipe makes far more than enough for one meal, and the leftovers are great warmed or straight from the fridge. Hence, a dinner-to-lunch recipe!`,
+    cookTime: "45 minutes",
+    source: "https://www.thekitchn.com/dinnertolunch-recipe-peppery-w-113975",
+    servings: 6,
+    ingredients: [
+      "1 pound whole wheat pasta, like penne or farfalle",
+      "1 large onion, diced",
+      "8 ounces button mushrooms, sliced",
+      "1 bunch chard (about 1 pound), stems removed and diced, leaves cut into ribbons",
+      "2 sausage links (8 ounces), sliced (optional)",
+      "4 to 5 garlic cloves, minced",
+      "3 ounces cream cheese, mascarpone, or other soft creamy cheese",
+      "1/2 cup pasta water, saved from cooking pasta",
+      "Kosher salt",
+      "Freshly cracked black pepper"
+    ],
+    steps: `Cook the pasta in a large amount of boiling water with a good handful of salt. Just before draining, use a measuring cup to dip out about 1/2 cup of the starchy pasta water, and set this aside. Heat a teaspoon of olive oil in a large skillet or Dutch oven over medium-high heat. Add the onion with a pinch of salt and cook until the onion is softened and translucent. Add the mushrooms and another pinch of salt. Cook until the mushrooms have released their liquid, the liquid has boiled away, and the mushrooms are turning golden. Stir in the diced chard stems and the sausage. Cook until the stems are softened and the sausage is warmed through. (If the sausage is not pre-cooked, cook it along with the onions instead.)`
+  },
+  {
+    id: 24,
+    title: "Peanut Butter Cookies",
+    blurb: `A special recipe makes the peanut butteriest tasting cookie I have ever tasted. These soft and chewy peanut buttery cookies are the best!`,
+    cookTime: "1 hour",
+    source:
+      "https://www.allrecipes.com/recipe/11024/joeys-peanut-butter-cookies/",
+    servings: 36,
+    ingredients: [
+      "1 cup peanut butter",
+      "1/2 cup butter, softened",
+      "1/2 cup white sugar",
+      "1/2 cup packed brown sugar",
+      "1 egg",
+      "3 tbsp milk",
+      "1 tsp vanilla extract",
+      "1 1/4 cups all purpose flour",
+      "3/4 tsp baking powder",
+      "1/4 teaspoon salt"
+    ],
+    steps: `Preheat oven to 375 degrees F (190 degrees C). In a large bowl, cream together the peanut butter, butter, white sugar, and brown sugar until well blended. Beat in the egg, milk, and vanilla one at a time. Combine the flour, baking powder, and salt; stir into creamed mixture. Roll tablespoonfuls of dough into balls. Place cookies 2 inches apart onto ungreased cookie sheets. Press each ball once with fork tines. Bake for 8 to 10 minutes in the preheated oven, or until edges are lightly browned.`
   }
 ];
 
