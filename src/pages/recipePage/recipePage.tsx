@@ -16,9 +16,11 @@ class RecipePage extends React.Component<any, RecipePageState> {
       } else {
         return (
           <div>
-            {recipe.steps.map(item => (
-              <div className="pb-2">
-                <h6 className="font-weight-bold">{item.header}</h6>
+            {recipe.steps.map((item, index) => (
+              <div className="pb-2" key={item.header}>
+                <h6 className="font-weight-bold">{`${index + 1}. ${
+                  item.header
+                }`}</h6>
                 <p>{item.content}</p>
               </div>
             ))}

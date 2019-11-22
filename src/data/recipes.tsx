@@ -354,7 +354,7 @@ const recipes: Recipe[] = [
       "2 onions",
       "1 cup buttermilk",
       "2 -3 cups all purpose flour",
-      "8 oz cremeni mushrooms",
+      "8 oz cremini mushrooms",
       "2 cloves crushed garlic",
       "1 1/2 cups chicken stock",
       "1 cup heavy cream",
@@ -370,7 +370,7 @@ const recipes: Recipe[] = [
       {
         header: "Fried Onions",
         content:
-          "Mandolin 2 large onions into small slivers.  Soak in buttermilk for 15 minutes and drain.  Coat in flour, use seiv to remove excess.  Fry coated onions in oil for 7 to 9 minutes.  Remove from pan, strain and season with salt."
+          "Mandolin onions into small slivers.  Soak in buttermilk for 15 minutes and drain.  Coat in flour, use seiv to remove excess.  Fry coated onions in oil for 7 to 9 minutes.  Remove from pan, strain and season with salt."
       },
       {
         header: "Cream of Mushroom Soup",
