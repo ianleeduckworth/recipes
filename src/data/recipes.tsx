@@ -606,6 +606,29 @@ const recipes: Recipe[] = [
       "1/4 teaspoon salt"
     ],
     steps: `Preheat oven to 375 degrees. In a large bowl, cream together the peanut butter, butter, white sugar, and brown sugar until well blended. Beat in the egg, milk, and vanilla one at a time. Combine the flour, baking powder, and salt; stir into creamed mixture. Roll tablespoonfuls of dough into balls. Place cookies 2 inches apart onto ungreased cookie sheets. Press each ball once with fork tines. Bake for 8 to 10 minutes in the preheated oven, or until edges are lightly browned.`
+  },
+  {
+    id: 25,
+    title: "Banana Bread",
+    blurb: `Favorite banana bread recipe`,
+    cookTime: "1 hour",
+    source:
+      "https://gimmedelicious.com/healthy-moist-banana-bread/#wprm-recipe-container-12869",
+    servings: 12,
+    ingredients: [
+      "2 eggs",
+      "1/2 cup olive oil",
+      "1/3 cup honey or maple syrup",
+      "1/4 cup milk or Greek yogurt",
+      "1 tsp vanilla extract",
+      "2-3 medium bananas",
+      "1 3/4 cups white whole wheat flour",
+      "1/2 tsp ground cinnamon optional",
+      "1 tsp baking soda",
+      "1/2 tsp salt",
+      "1/2 cup dark chocolate chips"
+    ],
+    steps: `Pre-heat oven to 350F. Grease a 9x5 inch loaf pan and set aside. In a medium bowl, whisk the flour, cinnamon, baking soda and salt. Set aside. In a large bowl, beat eggs, oil, honey, milk and vanilla for 2 minutes. Stir in the bananas, flour mixture and chocolate chips (or any other add-ins of choice. Pour batter into greased pan, sprinkle with some more cinnamon, raw sugar, or banana slices (optional) Bake for 50-55 minutes or until a toothpick inserted comes out clean. Cool for 10 minutes, slice and enjoy!`
   }
 ];
 
