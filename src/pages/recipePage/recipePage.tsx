@@ -63,6 +63,12 @@ class RecipePage extends React.Component<any, RecipePageState> {
               <div className="card-header font-weight-bold">Steps</div>
               <div className="card-body">{renderSteps()}</div>
             </div>
+            {recipe.notes && (
+              <div className="card mt-4">
+                <div className="card-header font-weight-bold">Notes</div>
+                <div className="card-body">{recipe.notes}</div>
+              </div>
+            )}
           </div>
         </div>
       </div>
