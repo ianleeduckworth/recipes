@@ -45,6 +45,37 @@ class RecipePage extends React.Component<any, RecipePageState> {
             Source
           </a>
         )}
+        {recipe.tags && recipe.tags.length > 0 && (
+          <div className="row">
+            <div className="col-12">
+              <div className="mb-1 mt-2">
+                <a
+                  data-toggle="collapse"
+                  href="#tagsCollapse"
+                  aria-expanded="false"
+                  aria-controls="tagsCollapse"
+                >
+                  Tags
+                </a>
+              </div>
+              <div className="collapse" id="tagsCollapse">
+                <div className="card">
+                  <div className="card-header font-weight-bold">Tags</div>
+                  <div className="card-body">
+                    {recipe.tags.map(item => (
+                      <span
+                        key={item}
+                        className="badge badge-pill badge-dark mr-1"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="row pt-4">
           <div className="col-12 col-lg-4 pb-3">
             <div className="card">
