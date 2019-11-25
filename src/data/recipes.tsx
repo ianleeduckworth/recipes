@@ -788,6 +788,146 @@ const recipes: Recipe[] = [
       "1 package (10 ounces) dark chocolate chips"
     ],
     steps: `In a small bowl, beat cream cheese and confectioners' sugar until blended. Beat in pumpkin, pie spice and vanilla. Stir in cracker crumbs. Freeze, covered, 20 minutes or until firm enough to shape. Shape pumpkin mixture into 1-in. balls; place on waxed paper-lined baking sheets; freeze 20 minutes or until firm. In a microwave, melt chocolate; stir until smooth. Dip truffles in chocolate; allow excess to drip off. Return to baking sheets; refrigerate until set. Store in airtight containers in the refrigerator.`
+  },
+  {
+    id: 33,
+    title: "Homemade Falafel with Tahini Sauce",
+    blurb: `Solid falafel and tahini sauce recipe`,
+    cookTime: "1 hour and 30 minutes",
+    source: "https://www.justataste.com/homemade-falafel-with-tahini-sauce/",
+    servings: 8,
+    ingredients: [
+      "2 cups roughly chopped white onion",
+      "6 garlic cloves",
+      "2 cups cooked chickpeas, drained",
+      "1 cup lightly packed parsley leaves",
+      "1 cup lightly packed cilantro leaves",
+      "1 tsp salt",
+      "1/4 tsp chili powder",
+      "2 tsp cumin",
+      "2 tsp baking powder",
+      "1/2 cup all-purpose flour",
+      "Canola oil, for sauteing",
+      "Pita bread, for serving",
+      "FOR THE TAHINI SAUCE:",
+      "1 1/4 cups plain yogurt (full fat or non-fat)",
+      "1/4 cup tahini (sesame paste)",
+      "2 Tablespoons fresh lemon juice"
+    ],
+    steps: `Add the onion and garlic cloves to the bowl of a food processor and pulse just until they are finely minced. Remove the mixture and press it through a strainer to release as much liquid as possible then set it aside. Add the chickpeas, parsley, cilantro, salt, chili powder, and cumin to the bowl of the food processor and pulse until they are roughly blended but not pureed. Return the onion mixture to the food processor, along with the baking powder and just enough flour so that when you pulse the processor, the mixture begins to form a small ball and is not sticky. (Note: Start by adding ¼ cup of flour, and then the remaining ¼ cup. You can add more if the mixture is still too wet.) Transfer the falafel mixture to a bowl, cover it with plastic wrap and refrigerate it for 1 hour. While the falafel mixture is chilling, prepare the tahini sauce by whisking together the yogurt, tahini and lemon juice. Season it with salt and pepper, cover it and place it in the fridge. Once the falafel mixture has chilled, use a small ice cream scoop or spoons to form the mixture into balls (roughly 3 Tablespoons per ball) then flatten them slightly so they are the shape of patties. (Note: You can also add additional flour at this point, if the mixture is too wet to scoop.) Set a large sauté pan over medium heat and add a liberal amount of canola oil so that the pan is well-coated. Let the pan pre-heat for 3 minutes then add the falafel one by one, browning them on the first side for 3 minutes, then flipping them once and browning the second side until the mixture is cooked throughout. Transfer the falafel to a paper towel-lined cooling rack and immediately season them with salt. Repeat this process until you have cooked all of the falafel. Place three or four falafel inside a halved, warmed pita and drizzle with the prepared tahini sauce.`
+  },
+
+  {
+    id: 34,
+    title: "Spinach-Feta Quinoa Cakes",
+    blurb: `Great little patties with lemon-dill yogurt sauce`,
+    cookTime: "40 minutes",
+    source:
+      "https://paninihappy.com/spinach-feta-quinoa-cakes-plus-5-quick-dinners-on-the-panini-press/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed:+PaniniHappy+(Panini+Happy)&utm_content=Yahoo!+Mail",
+    servings: 8 - 10,
+    ingredients: [
+      "Lemon-Dill Yogurt Sauce:",
+      "1/2 cup plain Greek yogurt, reduced-fat or whole",
+      "2 tablespoons finely chopped scallions",
+      "2 teaspoons freshly squeezed lemon juice",
+      "2 teaspoons chopped fresh dill",
+      "Coarse salt and freshly ground black pepper",
+      "Quinoa Cakes:",
+      "1 tablespoon extra-virgin olive oil",
+      "1/2 cup finely chopped onion",
+      "2 garlic cloves, finely chopped",
+      "5 ounces chopped baby spinach",
+      "2 large eggs, beaten",
+      "1 1/4 cups cooked quinoa",
+      "2 ounces crumbled feta cheese",
+      "1 tablespoon chopped fresh dill",
+      "1/4 teaspoon grated lemon zest",
+      "1/4 teaspoon freshly ground black pepper",
+      "1/2 cup bread crumbs"
+    ],
+    steps: [
+      {
+        header: "Lemon-Dill Yogurt Sauce",
+        content:
+          "Whisk together the yogurt, scallions, lemon juice, and dill in a small bowl. Season to taste with salt and pepper. Cover and refrigerate the sauce for at least 1 hour to allow the flavors to meld."
+      },
+      {
+        header: "Quinoa Cakes",
+        content:
+          "Heat the olive oil in a large skillet over medium heat. Add the onion and garlic and cook, stirring often, until softened, about 4 minutes. Add the spinach and cook, stirring often, until wilted, about 3 minutes. Transfer the mixture to a medium-size bowl. Add the eggs, quinoa, feta, dill, lemon zest, and black pepper and mix well. Mix in the bread crumbs and let the mixture sit for a few minutes to allow the bread crumbs to absorb some of the moisture. Heat the panini press to medium-high heat. Form quinoa patties about 2 1/2 inches in diameter and 1/2 inch thick. Place the patties on the grill, in batches if necessary, and close the lid. Grill the patties until they’re cooked through and browned on the outside, 4 to 5 minutes. Serve warm with lemon-dill yogurt sauce."
+      }
+    ]
+  },
+
+  {
+    id: 35,
+    title: "Pad Thai",
+    blurb: `Super easy go-to pad thai recipe`,
+    cookTime: "40 minutes",
+    source: "http://browniesfordinner.com/2010/05/11/easy-pad-thai/",
+    servings: 4,
+    ingredients: [
+      "8 ounces dried, wide and flat rice noodles",
+      "2 tablespoons brown sugar",
+      "2 tablespoons fresh lime juice, plus wedges for serving",
+      "3 tablespoons soy sauce",
+      "1 squirt (about 1/8 teaspoon) Sriracha (optional)",
+      "2 teaspoons vegetable oil",
+      "3 scallions (green onions), white and green parts, separated and thinly sliced",
+      "1 garlic clove, minced",
+      "2 large eggs, light beaten (optional)",
+      "1/2 cup fresh cilantro",
+      "1/4 cup chopped roasted, salted peanuts"
+    ],
+    steps: `Soak noodles according to package instructions. Drain. In a small bowl, whisk together brown sugar, lime juice, soy sauce, and Sriracha. In a large nonstick skillet, heat oil over medium-high heat. Add scallion whites and garlic and cook, stirring constantly, until fragrant (about 30 seconds). Add eggs and cook, scraping skillet with spatula until eggs are almost set (about 30 seconds). Transfer eggs to a plate. Add noodles, scallion greens, and sauce to skillet. Cook, tossing constantly, until noodles are soft (about 1 minute). Add egg mixture and toss to coat, breaking eggs up gently. Serve noodles with lime wedges, topped with cilantro and peanuts.`
+  },
+
+  {
+    id: 36,
+    title: "Easy Sweet Potato Veggie Burgers With Avocado",
+    blurb: `An old favorite.  A little time consuming but tasty and healthy.`,
+    cookTime: "One hour and twenty minutes",
+    source:
+      "https://healthyhappylife.com/easy-sweet-potato-veggie-burgers-with/",
+    servings: 6,
+    ingredients: [
+      "1 medium sweet potato, baked and peeled",
+      "16 oz. cooked white beans, canned, drained and rinsed",
+      "1/2 cup white onion, chopped",
+      "2-3 Tbsp tahini",
+      "3/4 tsp apple cider vinegar",
+      "1 tsp garlic powder",
+      "1/2 – 1 tap chipotle powder, or cajun spice",
+      "1/2 tsp salt",
+      "1/8 tsp black pepper, or to taste",
+      "1/3 cup nutritional yeast, or any flour as a sub",
+      "1/2 cup leafy greens, kale, spinach, parsley, finely chopped",
+      "toppings:  avocado, tomato, lettuce, tomato, onion, greens, etc",
+      "Panko bread crumbs for crispy topping, optional"
+    ],
+    steps: `Bake your sweet potato in a 400 degree oven for 45 minutes or until tender. If in a hurry, you could use the microwave, but oven-baked yields more flavor. Drain and rinse beans. Rinse in very hot water to help soften them a bit. Add the sweet potato and beans to a large mixing bowl. Add the tahini and vinegar. Using a large fork, mash well. Fold inthe onion, garlic, chipotle, salt, pepper, nutritional yeast/flour and greens – and continue mashing. Preheat oven to 400 degrees. Pan-fry: Form burger mixture into large patties and roll in the Panko breadcrumbs. Warm a skillet over high heat. Addoil to pan. Cook patties 2-3 at a time. Pan fry each side for about two minutes, until crispy and lightly browned. Transferthe pan-fried patties to a parchment-sheet lined baking sheet. Repeat until all the patties are pan-fried. (6-8 patties). Bake patties in a 400 degree oven for 10-15 minutes. Toast burger buns. Add toppings and patties. Serve!`
+  },
+
+  {
+    id: 37,
+    title: "Cheesy Quinoa Mac and Cheese",
+    blurb: `Used to make this a lot in law school.  Doesn't keep well so don't double it.`,
+    cookTime: "1 hour 30 minutes",
+    source:
+      "http://aroundthetableri.blogspot.com/2012/02/cheesy-quinoa-mac-cheese.html",
+    servings: 8,
+    ingredients: [
+      "1 1/2 cups quinoa, rinsed and drained",
+      "Veggies of your choice (optional)",
+      "good pinch of salt",
+      "a few grinds of seasoning salt",
+      "2 cloves garlic, minced",
+      "2 large eggs",
+      "1 cup soy milk or non-fat milk",
+      "1 1/2 cups grated Cheddar cheese, more for sprinkling",
+      "Optional- Crushed Red Pepper, Panko Bread crumbs for topping"
+    ],
+    steps: `Lightly saute any veggies you would like in this dish. Cook quinoa to packaged instructions until fully cooked. (About 15 minutes).  Preheat oven to 350 F. Coat 13x9 inch dish( or 8 individual ramekins) with cooking spray. Whisk together eggs and milk in large bowl. Fold in quinoa mixture and cheese. Stir very well and let some of the cheese melt.  Transfer to prepared baking dish and if using Panko Crumbs or Bread crumbs add now and bake 30-35 mins, until bread crumbs are browned.`
   }
 ];
 
