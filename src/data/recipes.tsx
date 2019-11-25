@@ -631,6 +631,161 @@ const recipes: Recipe[] = [
     ],
     steps: `Pre-heat oven to 350F. Grease a 9x5 inch loaf pan and set aside. In a medium bowl, whisk the flour, cinnamon, baking soda and salt. Set aside. In a large bowl, beat eggs, oil, honey, milk and vanilla for 2 minutes. Stir in the bananas, flour mixture and chocolate chips (or any other add-ins of choice). Pour batter into greased pan, sprinkle with some more cinnamon, raw sugar, or banana slices (optional) Bake for 50-55 minutes or until a toothpick inserted comes out clean. Cool for 10 minutes, slice and enjoy!`,
     notes: "Easy to double recipe; best baked in 9 inch round cake pans"
+  },
+  {
+    id: 26,
+    title: "Pasta Aglio E Olio",
+    blurb: `A recipe that is definitely greater than the sum of it's parts.  With just 7 ingredients, this pasta has no right being this good.`,
+    cookTime: "20 minutes",
+    servings: 2,
+    ingredients: [
+      "1/2 cup good quality olive oil",
+      "8 cloves of garlic, very thinly sliced",
+      "1 tsp red pepper flakes",
+      "1/2 lemon",
+      "1/2 cup finely chopped parsley",
+      "Salt and pepper to taste"
+    ],
+    steps: `In a large skilet, heat the oil over medium heat until barely shimmering.  Add the garlick and cook, stirring constantly, until softened and turning golden brown around the edges, taking care not to let the garlic burn.  Add the red pepper flakes and remove the skillet from the heat.  Meanshile, bring a large pot of salted water to a boil.  Add the pasta and cook until just shy of al dente.  Drain the pasta, reserving 1/4 cup of the pasta water.  Return the skilet to medium heat and add the drained pasta and a spash of pasta water.  Continue cooking the pasta, tossing frequently and adding water as needed, until the pasta is al dente and well coated in a creamy sauce.  Squeeze the lemon over the pasta, season to taste with salte and pepper, sprinkle with the parseley and serve.`,
+    notes:
+      "The amount of parseley called for here ends up being a lot; consider making it with less."
+  },
+  {
+    id: 27,
+    title: "Hawaiian Burger",
+    blurb: `Inspired by Pulp Fiction.  The cornerstone of a nutritious breakfast.`,
+    cookTime: "1 hour",
+    servings: 1,
+    ingredients: [
+      "2 tbsp unsalted butter",
+      "1 red onion sliced into rings",
+      "2 1/2 inch thick pineapple rings",
+      "1 tbsp vegetable oil",
+      "4 oz ground beef divided into 2 balls",
+      "2 sliced monterrey jack cheese",
+      `1 Hawaiian style burger bun (such as King's Hawaiian)`,
+      "1 1/2 tsp ketchup",
+      "1 1/2 tsp teriyaki sauce"
+    ],
+    steps: `In a large skilet, heat 1 tbsp of butter over medium heat until foaming.  Add teh onions and cook slowly over low heat, stirring often, until the union is caramalized; 30 minutes.  Transfer the onion to a bowl and set aside.  Wipe out the skillet and heat the remaining tbsp of butter over medium heat until sizzling.  Add the pineapple slices and cook, turning once, until lightly browned on both sides.  Transfer the pineapple to a plate and set aside.  In a large cast-iron skillet, heat the oil over high heat until just beginning to smoke.  Place the beef balls several inches apart in the skillet, then use a heavy spatula to smash them down into thin patties (about 1/4 to 1/2 inch thick).  Cook unti lthet bottom is well browned and crisp, 1 to 2 minutes, then flip and top with a slice of cheese.  Turn off the heat, but leave the patties in the pan while you assemble the burgers (the risidual heat will brown the other side).  Dress the bottom half of the but with ketchup and teriyaki sauceand top with the patties, pineapple, and caramalized onion.  Top with the other half of the bun and serve.`
+  },
+  {
+    id: 28,
+    title: "Fluffy Pumpkin Pancakes",
+    blurb: `These pumpkin pancakes are also delicious served with butter or whipped topping and a sprinkle of pumpkin pie spice.`,
+    cookTime: "30 minutes",
+    source: "https://www.tasteofhome.com/recipes/fluffy-pumpkin-pancakes/",
+    servings: 6,
+    ingredients: [
+      "1/3 cup all-purpose flour",
+      "1/3 cup whole wheat flour",
+      "2 tablespoons sugar",
+      "1/2 teaspoon baking powder",
+      "1/2 teaspoon baking soda",
+      "1/4 teaspoon pumpkin pie spice",
+      "1/8 teaspoon ground cinnamon",
+      "Dash salt",
+      "1 large egg",
+      "1/2 cup fat-free milk",
+      "1/3 cup vanilla yogurt",
+      "1/3 cup canned pumpkin",
+      "1 tablespoon canola oil",
+      "1/8 teaspoon vanilla extract",
+      "Maple syrup"
+    ],
+    steps: `In a bowl, whisk together the first eight ingredients. In another bowl, whisk the next six ingredients until blended. Add to dry ingredients; stir just until moistened. Lightly coat a griddle with cooking spray; preheat over medium heat. Pour batter by 1/3 cupfuls onto griddle. Cook until bubbles on top begin to pop. Turn; cook until golden brown. Serve with syrup.`
+  },
+  {
+    id: 29,
+    title: "Pumpkin Scones with Spiced Glaze",
+    blurb: `These pumpkin scones are a copycat version of Starbucks’ pumpkin scone; they are warmly spiced and topped with two sweet glazes – one plain and one spiced.`,
+    cookTime: "45 minutes",
+    source: "https://www.browneyedbaker.com/pumpkin-scones-spiced-glaze/",
+    servings: 8,
+    ingredients: [
+      "2 cups all-purpose flour",
+      "7 tbsp granulated sugar",
+      "1 tbsp baking powder",
+      "1/2 tsp salt",
+      "3/4 tsp ground cinnamon",
+      "3/4 tsp ground nutmeg",
+      "1/4 tsp ground cloves",
+      "1/4 tsp ground ginger",
+      "6 tbsp cold butter (cut into small cubes)",
+      "1/2 cupcanned pumpkin",
+      "3 tbsp half-and-half (can substitute heavy cream)",
+      "1 large egg",
+      "3 tbsp milk",
+      "2 cups 4 tbsp powdered sugar"
+    ],
+    steps: `Make the Scones: Preheat the oven to 425 degrees F. Line a baking sheet with parchment paper; set aside. In a large bowl, whisk together the flour, sugar, baking powder, salt, cinnamon, nutmeg, cloves and ginger. Using a pastry blender (or fork), cut the butter into the dry ingredients until the mixture is crumbly and there are no pieces of butter larger than the size of a pea; set aside. In a medium bowl, whisk together the pumpkin, half-and-half and egg. Fold the wet ingredients into the dry ingredients until mostly combined (the mixture will seem dry), and turn the dough out onto a clean work surface. Knead the dough a few times to ensure it is completely combined. Pat the dough into a 7-inch circle. Cut the round of dough into 8 equal triangles. Place the scones on the prepared baking sheet. Bake for 14 to 16 minutes, or until lightly browned on top. Cool completely before glazing. Make the Powdered Sugar Glaze: In a small bowl, whisk together the powdered sugar and milk until smooth. Use a pastry brush to spread the glaze over the top of each scone. Allow to set (about 15 minutes) before proceeding with the spiced glaze. For the Spiced Glaze: In a small bowl, whisk together the powdered sugar, milk, cinnamon, nutmeg, ginger and cloves. Using a spoon, drizzle the glaze over each scone and allow to set before serving. (If the mixture is too stiff to drizzle, whisk in a splash of milk at a time to thin it out just enough to drizzle.) Leftover scones can be stored in an airtight container at room temperature for up to 3 days.`
+  },
+  {
+    id: 30,
+    title: "Mexican Pumpkin Empanadas",
+    blurb: `My take on a traditional pumpkin empanada! Adjust all spices to your taste.`,
+    cookTime: "1 hour",
+    source:
+      "https://www.allrecipes.com/recipe/216489/mexican-pumpkin-empanadas/",
+    servings: 12,
+    ingredients: [
+      "3 cups all purpose flour",
+      "1/3 cup white sugar",
+      "1 1/2 tsp salt",
+      "1/4 tsp baking powder",
+      "1 cup vegetable shortening",
+      "1 cup warm water",
+      "4 cups canned pure pumpkin",
+      "2 eggs",
+      "1 cup white sugar",
+      "1 tsp salt",
+      "1 1/2 tsp ground cinnamon",
+      "1 tsp ground ginger",
+      "1/2 tsp ground cloves"
+    ],
+    steps: `Preheat oven to 350 degrees F (175 degrees C). Line baking sheets with parchment paper. In a large bowl, whisk the flour, 1/3 cup of sugar, 1 1/2 teaspoons of salt, and baking powder together. Cut the shortening into the flour mixture until it resembles coarse crumbs; stir the water in, about 2 tablespoons at a time, just until you can gather the dough together. Knead the dough a few times in the bowl, then scrape it out onto a floured surface. Cut the dough in quarters, and cut each quarter into thirds to make 12 equal portions. Roll the portions into balls. Cover the dough balls with a cloth, and allow to rest while you make the filling. Mix the pumpkin, 2 eggs, 1 cup of sugar, 1 teaspoon of salt, cinnamon, ginger, and cloves together until smooth. On a floured surface, roll each dough ball out into a thin circle about 6 inches across; spoon about 1/3 cup of filling into the center of the dough circle. Fold the dough over the filling to make a half-moon shaped pie, and crimp the edges of the crust together with a fork, leaving little fork lines in the dough. Gently lay the empanadas onto the prepared baking sheets. Brush the top of each pie with beaten egg. Bake in the preheated oven until the filling is hot and the crusts are shiny and browned, about 20 minutes.`
+  },
+  {
+    id: 31,
+    title: "Pumpkin Pie-Spiced Granola",
+    blurb: `It's granola and it's pumpkin.  Not much else can be said.  Not sexy, but it'll get the job done`,
+    cookTime: "1 hour",
+    source: "https://www.tasteofhome.com/recipes/pumpkin-pie-spiced-granola/",
+    servings: 4,
+    ingredients: [
+      "4 cups old-fashioned oats",
+      "1 cup raw pumpkin seeds or pepitas",
+      "1 cup canned pumpkin",
+      "1/2 cup packed brown sugar",
+      "1/4 cup honey",
+      "1/4 cup canola oil",
+      "2 tablespoons water",
+      "2 teaspoons ground cinnamon",
+      "3/4 teaspoon salt",
+      "3/4 teaspoon ground ginger",
+      "3/4 teaspoon ground nutmeg",
+      "1/4 teaspoon ground cloves"
+    ],
+    steps: `Preheat oven to 325°. In a large bowl, combine oats and pumpkin seeds. In a small saucepan, whisk remaining ingredients; bring to a boil. Remove from heat. Pour over oat mixture; toss to coat. Spread evenly into 2 greased 15x10x1-in. baking pans. Bake 40-50 minutes or until golden brown, stirring every 10 minutes. Cool completely on wire racks. Store in an airtight container.`
+  },
+  {
+    id: 32,
+    title: "Dark Chocolate Pumpkin Truffles",
+    blurb: `The combination of pumpkin and dark chocolate is unexpected and delectable. These delicious truffles make a pretty addition to a party plate, a sweet way to finish up a meal, or a gift your friends and family will love.`,
+    cookTime: "30 minutes",
+    source:
+      "https://www.tasteofhome.com/recipes/dark-chocolate-pumpkin-truffles/",
+    servings: 30,
+    ingredients: [
+      "2/3 cup reduced-fat cream cheese",
+      "1/2 cup confectioners sugar",
+      "2/3 cup canned pumpkin",
+      "1 teaspoon pumpkin pie spice",
+      "1 teaspoon vanilla extract",
+      "2-1/4 cups crushed reduced-fat graham crackers",
+      "1 package (10 ounces) dark chocolate chips"
+    ],
+    steps: `In a small bowl, beat cream cheese and confectioners' sugar until blended. Beat in pumpkin, pie spice and vanilla. Stir in cracker crumbs. Freeze, covered, 20 minutes or until firm enough to shape. Shape pumpkin mixture into 1-in. balls; place on waxed paper-lined baking sheets; freeze 20 minutes or until firm. In a microwave, melt chocolate; stir until smooth. Dip truffles in chocolate; allow excess to drip off. Return to baking sheets; refrigerate until set. Store in airtight containers in the refrigerator.`
   }
 ];
 
