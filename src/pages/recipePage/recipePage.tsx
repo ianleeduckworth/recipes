@@ -15,7 +15,7 @@ class RecipePage extends React.Component<any, RecipePageState> {
         return <p>{recipe.steps}</p>;
       } else {
         return (
-          <div>
+          <>
             {recipe.steps.map((item, index) => (
               <div className="pb-2" key={item.header}>
                 <h6 className="font-weight-bold">{`${index + 1}. ${
@@ -24,7 +24,7 @@ class RecipePage extends React.Component<any, RecipePageState> {
                 <p>{item.content}</p>
               </div>
             ))}
-          </div>
+          </>
         );
       }
     };
