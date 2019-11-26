@@ -8,6 +8,7 @@ export interface Recipe {
   steps: string | Step[];
   source?: string;
   notes?: string;
+  tags?: string[];
 }
 
 export interface Step {
@@ -37,7 +38,8 @@ const recipes: Recipe[] = [
       "3 Tbs. thinly sliced fresh basil, chives, or dill, or a mixture of all three (omit if using one of the garnishes below)"
     ],
     steps:
-      "In a nonreactive 5- to 6-quart Dutch oven, heat the oil and butter over medium-low heat until the butter melts. Add the onion and garlic and cook, stirring occasionally, until soft but not browned, about 8 minutes. Add the flour and stir to coat the onion and garlic. Add the broth, tomatoes, sugar, thyme, and 1/4 tsp. each salt and pepper. Bring to a simmer over medium-high heat while stirring the mixture to make sure that the flour is not sticking to the bottom of the pan. Reduce the heat to low, cover, and simmer for 40 minutes. Discard the thyme sprig. Let cool briefly and then purée in two or three batches in a blender or food processor. Rinse the pot and return the soup to the pot. Season to taste with salt and pepper. Reheat if necessary. Serve warm but not hot, garnished with the herbs or dolloped with one of the garnishes below."
+      "In a nonreactive 5- to 6-quart Dutch oven, heat the oil and butter over medium-low heat until the butter melts. Add the onion and garlic and cook, stirring occasionally, until soft but not browned, about 8 minutes. Add the flour and stir to coat the onion and garlic. Add the broth, tomatoes, sugar, thyme, and 1/4 tsp. each salt and pepper. Bring to a simmer over medium-high heat while stirring the mixture to make sure that the flour is not sticking to the bottom of the pan. Reduce the heat to low, cover, and simmer for 40 minutes. Discard the thyme sprig. Let cool briefly and then purée in two or three batches in a blender or food processor. Rinse the pot and return the soup to the pot. Season to taste with salt and pepper. Reheat if necessary. Serve warm but not hot, garnished with the herbs or dolloped with one of the garnishes below.",
+    tags: ["soup", "tomato"]
   },
   {
     id: 2,
@@ -81,7 +83,8 @@ const recipes: Recipe[] = [
       "1 avacado",
       "shreaded lettuce"
     ],
-    steps: `Add olive oil to a large skillet and place over medium high heat. Add onions and turkey. Brown the turkey, and break up the meat with a wooden spoon until nice and browned.  Transfer to the slow cooker and add in garlic, tomato sauce, cumin, chili powder, oregano, paprika, cayenne pepper and salt. Stir to combine. Cook on high for 2-3 hours or on low for 6-7 hours. Once ready to serve, divide meat between 8 corn tortillas. Add grape tomatoes, cheese, diced avocado, lettuce and jalapeno slices. Serves 4. Optional to serve with greek yogurt, if desired.`
+    steps: `Add olive oil to a large skillet and place over medium high heat. Add onions and turkey. Brown the turkey, and break up the meat with a wooden spoon until nice and browned.  Transfer to the slow cooker and add in garlic, tomato sauce, cumin, chili powder, oregano, paprika, cayenne pepper and salt. Stir to combine. Cook on high for 2-3 hours or on low for 6-7 hours. Once ready to serve, divide meat between 8 corn tortillas. Add grape tomatoes, cheese, diced avocado, lettuce and jalapeno slices. Serves 4. Optional to serve with greek yogurt, if desired.`,
+    tags: ["crockpot", "meat"]
   },
   {
     id: 4,
@@ -100,7 +103,8 @@ const recipes: Recipe[] = [
       "1 small cabbage cut into wedges",
       "2 tbsp molasses"
     ],
-    steps: `Place potatoes, onions, carrots, and bay leaf in crock pot. Trim excess fat from brisket; put meat on top of vegies. Mix molasses with beer and pour over all. Cover and cook on LOW heat setting 9-11 hours. If desired, place cabbage wedges on top of meat. to steam for last hour. Slice brisket thinly across grain (let it cool 5- 10 minutes for easier slicing). Serve with vegetables.`
+    steps: `Place potatoes, onions, carrots, and bay leaf in crock pot. Trim excess fat from brisket; put meat on top of vegies. Mix molasses with beer and pour over all. Cover and cook on LOW heat setting 9-11 hours. If desired, place cabbage wedges on top of meat. to steam for last hour. Slice brisket thinly across grain (let it cool 5- 10 minutes for easier slicing). Serve with vegetables.`,
+    tags: ["crockpot"]
   },
   {
     id: 5,
@@ -140,7 +144,8 @@ const recipes: Recipe[] = [
       "1 tsp garlic powder",
       "1 tsp onion powder"
     ],
-    steps: `Place chicken breasts in bottom of crockpot.  Pour chicken broth and seasonings over chicken. Cook on low for 6-8 hours or high for 3-4 hours. Remove chicken from crockpot and shred with two forks. Use the chicken right away in your favorite recipes.  Or, allow chicken to cool and portion into zip-top bags and freeze for up to two months.`
+    steps: `Place chicken breasts in bottom of crockpot.  Pour chicken broth and seasonings over chicken. Cook on low for 6-8 hours or high for 3-4 hours. Remove chicken from crockpot and shred with two forks. Use the chicken right away in your favorite recipes.  Or, allow chicken to cool and portion into zip-top bags and freeze for up to two months.`,
+    tags: ["crockpot"]
   },
   {
     id: 7,
@@ -281,7 +286,8 @@ const recipes: Recipe[] = [
       "1/2 tsp fresh cracked pepper",
       "3 cloves garlic, minced"
     ],
-    steps: `Bring leg of lamb to room temperature, about 2 hours. Pour wine into a slow cooker. Mix lemon juice, honey, mustard, garlic, vinegar, rosemary, thyme, sea salt, and pepper together in a bowl until a thick paste forms. Massage paste into the lamb using your hands; gently place into the slow cooker. Cook on Low, without removing the cover, for 5 hours. An instant-read thermometer inserted near the bone should read 145 degrees F (65 degrees C). Let lamb rest for 15 to 20 minutes.`
+    steps: `Bring leg of lamb to room temperature, about 2 hours. Pour wine into a slow cooker. Mix lemon juice, honey, mustard, garlic, vinegar, rosemary, thyme, sea salt, and pepper together in a bowl until a thick paste forms. Massage paste into the lamb using your hands; gently place into the slow cooker. Cook on Low, without removing the cover, for 5 hours. An instant-read thermometer inserted near the bone should read 145 degrees F (65 degrees C). Let lamb rest for 15 to 20 minutes.`,
+    tags: ["crockpot"]
   },
   {
     id: 13,
@@ -457,7 +463,8 @@ const recipes: Recipe[] = [
       "1 cup half and half",
       "2 tbsp chopped fresh parsley"
     ],
-    steps: `Season chicken with salt and pepper, to taste. Place chicken into a 6-qt slow cooker. Stir in chicken stock, wild rice, garlic, onion, carrots, celery, thyme, rosemary and bay leaves; season with salt and pepper, to taste. Cover and cook on low heat for 6-8 hours. Add mushrooms during the last 30 minutes of cooking time. Remove chicken from the slow cooker and shred, using two forks. Melt butter in a saucepan over medium heat. Whisk in flour until lightly browned, about 1 minute. Whisk in milk and half and half, and cook, whisking constantly, until slightly thickened, about 4-5 minutes; season with salt and pepper, to taste. Stir chicken and milk mixture into the slow cooker. If the soup is too thick, add more half and half as needed until desired consistency is reached. Serve immediately, garnished with parsley, if desired.`
+    steps: `Season chicken with salt and pepper, to taste. Place chicken into a 6-qt slow cooker. Stir in chicken stock, wild rice, garlic, onion, carrots, celery, thyme, rosemary and bay leaves; season with salt and pepper, to taste. Cover and cook on low heat for 6-8 hours. Add mushrooms during the last 30 minutes of cooking time. Remove chicken from the slow cooker and shred, using two forks. Melt butter in a saucepan over medium heat. Whisk in flour until lightly browned, about 1 minute. Whisk in milk and half and half, and cook, whisking constantly, until slightly thickened, about 4-5 minutes; season with salt and pepper, to taste. Stir chicken and milk mixture into the slow cooker. If the soup is too thick, add more half and half as needed until desired consistency is reached. Serve immediately, garnished with parsley, if desired.`,
+    tags: ["crockpot"]
   },
   {
     id: 19,
@@ -499,7 +506,8 @@ const recipes: Recipe[] = [
         content:
           "Discard thyme and bay leaf, then shred chicken with two forks. Stir in celery, carrots, peas, and garlic. Cut biscuits into small pieces, then stir into chicken mixture. Spoon liquid over any biscuits at the top. Cook on high until vegetables are tender and biscuits are cooked through, about 1 hour more."
       }
-    ]
+    ],
+    tags: ["crockpot"]
   },
   {
     id: 20,
@@ -565,7 +573,8 @@ const recipes: Recipe[] = [
       "10 ounces refrigerated reduced-fat biscuit dough, torn into pieces",
       "1 cup frozen peas"
     ],
-    steps: `Place chicken, butter, cream of chicken soup, and onion in a slow cooker. Cover and cook on High for 5 to 6 hours. Stir in carrots after 5 hours of cooking. Place torn biscuit dough in slow cooker 30 minutes before serving. Cook until dough is no longer raw in the center, about 25 minutes. Lift edges of biscuits and stir in peas. Let stand until warm, about 10 minutes, before serving.`
+    steps: `Place chicken, butter, cream of chicken soup, and onion in a slow cooker. Cover and cook on High for 5 to 6 hours. Stir in carrots after 5 hours of cooking. Place torn biscuit dough in slow cooker 30 minutes before serving. Cook until dough is no longer raw in the center, about 25 minutes. Lift edges of biscuits and stir in peas. Let stand until warm, about 10 minutes, before serving.`,
+    tags: ["crockpot"]
   },
   {
     id: 23,
