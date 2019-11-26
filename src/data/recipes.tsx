@@ -788,8 +788,6 @@ const recipes: Recipe[] = [
       "1 package (10 ounces) dark chocolate chips"
     ],
     steps: `In a small bowl, beat cream cheese and confectioners' sugar until blended. Beat in pumpkin, pie spice and vanilla. Stir in cracker crumbs. Freeze, covered, 20 minutes or until firm enough to shape. Shape pumpkin mixture into 1-in. balls; place on waxed paper-lined baking sheets; freeze 20 minutes or until firm. In a microwave, melt chocolate; stir until smooth. Dip truffles in chocolate; allow excess to drip off. Return to baking sheets; refrigerate until set. Store in airtight containers in the refrigerator.`
-<<<<<<< HEAD
-=======
   },
   {
     id: 33,
@@ -930,7 +928,6 @@ const recipes: Recipe[] = [
       "Optional- Crushed Red Pepper, Panko Bread crumbs for topping"
     ],
     steps: `Lightly saute any veggies you would like in this dish. Cook quinoa to packaged instructions until fully cooked. (About 15 minutes).  Preheat oven to 350 F. Coat 13x9 inch dish( or 8 individual ramekins) with cooking spray. Whisk together eggs and milk in large bowl. Fold in quinoa mixture and cheese. Stir very well and let some of the cheese melt.  Transfer to prepared baking dish and if using Panko Crumbs or Bread crumbs add now and bake 30-35 mins, until bread crumbs are browned.`
->>>>>>> 8404ebbd14a1a93f825e07b4f576de23784200f5
   }
 ];
 
