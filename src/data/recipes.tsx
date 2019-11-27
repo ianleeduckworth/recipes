@@ -978,6 +978,23 @@ const recipes: Recipe[] = [
           "Place a spoonful of the filling onto a collard green leaf.  Roll burrito style and place in baking dish.  Repeat with remaining filling or collard green leaves.  Pour tomato sauce over top of the rolls.  Bake for 45 minutes.  Let rest 10 minutes before serving."
       }
     ]
+  },
+  {
+    id: 39,
+    title: "Cranberry Sauce",
+    blurb: `Hope's custom cranberry sauce.  Good for all times of year, but definitely a specialty for Thansgiving`,
+    cookTime: "30 minutes",
+    servings: 4,
+    ingredients: [
+      "12 oz Cranberries (1/2 cup reserved)",
+      "3/4 cup sugar",
+      "1/4 cup brown sugar",
+      "1 clementine, quartered",
+      "1 cinnamon stick",
+      "1 tbsp water"
+    ],
+    steps: `Add all ingredients to saucepan, place on stove with the burner on low.  Stir regularly for 10 minutes.  Increase the heat to medium and cook for 12 minutes.  Reduce heat to low, add reserved cranberries and season to taste.`,
+    tags: ["thanksgiving", "sauce"]
   }
 ];
 
