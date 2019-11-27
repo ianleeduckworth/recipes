@@ -355,6 +355,7 @@ const recipes: Recipe[] = [
     id: 16,
     title: "Binging With Babish Green Bean Casserole",
     blurb: `Babish knows best when it comes to great cooking.  This fresh green been casserole is a huge step up over the canned kind you grew up with.`,
+    source: "https://www.youtube.com/watch?v=8hpD5strtzM",
     cookTime: "1 hour 30 minutes",
     servings: 6,
     ingredients: [
@@ -391,7 +392,8 @@ const recipes: Recipe[] = [
       }
     ],
     notes:
-      "This recipe came from a Binging with Babish video and in it he never actually specifies the amount of green beans, so the number here is a guess.  Additionally, the amount that he calls for the boil time to be produces very crisp green beans.  For softer green beans, boil longer."
+      "This recipe came from a Binging with Babish video and in it he never actually specifies the amount of green beans, so the number here is a guess.  Additionally, the amount that he calls for the boil time to be produces very crisp green beans.  For softer green beans, boil longer.",
+    tags: ["vegetarian", "thanksgiving"]
   },
   {
     id: 17,
@@ -937,6 +939,45 @@ const recipes: Recipe[] = [
       "Optional- Crushed Red Pepper, Panko Bread crumbs for topping"
     ],
     steps: `Lightly saute any veggies you would like in this dish. Cook quinoa to packaged instructions until fully cooked. (About 15 minutes).  Preheat oven to 350 F. Coat 13x9 inch dish( or 8 individual ramekins) with cooking spray. Whisk together eggs and milk in large bowl. Fold in quinoa mixture and cheese. Stir very well and let some of the cheese melt.  Transfer to prepared baking dish and if using Panko Crumbs or Bread crumbs add now and bake 30-35 mins, until bread crumbs are browned.`
+  },
+  {
+    id: 38,
+    title: "Collard Green Wraps",
+    blurb: `Best use of Collard Greens.  Time consuming, but totally worth it`,
+    cookTime: "1 hour 30 minutes",
+    servings: 4,
+    ingredients: [
+      "1 large bunch of collard greens",
+      "1 lb ground beef (or elk)",
+      "1 yellow onion",
+      "1 cup quinoa",
+      "1 can black eyed peas",
+      "1 egg",
+      "1 jar tomato sauce",
+      "2 tsp salt",
+      "3 cloves finely minced garlic",
+      "21 seasoning salute to taste",
+      "Paprika to taste",
+      "Umami spice blend to taste",
+      "Pepper to taste"
+    ],
+    steps: [
+      {
+        header: "Prep the filling",
+        content:
+          "Preheat the oven to 350 degrees F.  Cook quinoa on the stove top according to package instructions.  Brown beef (or elk).  Add onion, salt, and spices to taste once browned. In a seperate large bowl, add can of black eyed peas, browned meat mixture, quinoa, and egg."
+      },
+      {
+        header: "Prepare Collard Greens",
+        content:
+          "Blanche collard greens in boiling water.  Remove and dunk into ice water.  Cut leaves length-wise, removing the stem."
+      },
+      {
+        header: "Assemble and bake",
+        content:
+          "Place a spoonful of the filling onto a collard green leaf.  Roll burrito style and place in baking dish.  Repeat with remaining filling or collard green leaves.  Pour tomato sauce over top of the rolls.  Bake for 45 minutes.  Let rest 10 minutes before serving."
+      }
+    ]
   }
 ];
 
