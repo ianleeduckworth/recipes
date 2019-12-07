@@ -2,6 +2,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import "./recipeList.scss";
+import { sortByTitleAlphabetical } from "../../utilities/filter";
 
 export interface RecipeItem {
   id: number;
@@ -58,7 +59,7 @@ class RecipeList extends React.Component<RecipeListProps> {
 
 const mapStateToProps = (state: any) => {
   return {
-    recipes: state.recipes
+    recipes: state.recipes.sort(sortByTitleAlphabetical)
   };
 };
 
