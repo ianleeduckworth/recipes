@@ -995,6 +995,130 @@ const recipes: Recipe[] = [
     ],
     steps: `Add all ingredients to saucepan, place on stove with the burner on low.  Stir regularly for 10 minutes.  Increase the heat to medium and cook for 12 minutes.  Reduce heat to low, add reserved cranberries and season to taste.`,
     tags: ["thanksgiving", "sauce"]
+  },
+  {
+    id: 40,
+    title: "Tomato and Mozzarella Bites",
+    blurb: `A great way to serve tomato mozzarella salad. Great presentation; always a hit!`,
+    cookTime: "30 minutes",
+    source:
+      "https://www.allrecipes.com/recipe/104806/tomato-and-mozzarella-bites/?internalSource=hub%20recipe&referringId=17807&referringContentType=Recipe%20Hub&clickId=cardslot%203",
+    servings: 8,
+    ingredients: [
+      "20 grape or cherry tomatoes, halved",
+      "20 fresh basil leaves",
+      "20 small balls fresh mozzarella cheese (often labeled bocconcini)",
+      "1/2 cup balsamic vinegar",
+      "1/4 cup extra virgin olive oil",
+      "20 toothpicks",
+      "Salt and pepper to taste"
+    ],
+    steps: [
+      {
+        header: "Assembly",
+        content:
+          "Using a toothpick, spear a half of a tomato, a leaf of basil, a mozzarella ball, and another half of a tomato. Repeat with remaining ingredients."
+      },
+      {
+        header: "Presentation",
+        content:
+          "Place on a serving dish and sprinkle with salt and pepper. Mix the vinegar and oil together in a small bowl to serve as a dipping sauce."
+      }
+    ]
+  },
+  {
+    id: 41,
+    title: "Red Wine and Goat Cheese Risotto",
+    blurb: `Do you want to eat a big bowl of Christmas?`,
+    cookTime: "1 hour 20 minutes",
+    source:
+      "https://www.howsweeteats.com/2011/12/red-wine-goat-cheese-risotto-with-caramelized-mushrooms/",
+    servings: 4,
+    ingredients: [
+      "2 tablespoons olive oil",
+      "2 tablespoons unsalted butter",
+      "3 garlic cloves, minced or pressed",
+      "1 1/4 cups arborio rice",
+      "1 cup of your favorite red wine",
+      "3-4 cups low-sodium chicken stock",
+      "6 ounces goat cheese",
+      "3 cups sliced mushrooms",
+      "1/4 teaspoon salt",
+      "1/4 teaspoon pepper",
+      "fresh basil for topping"
+    ],
+    steps: [
+      {
+        header: "Preparing the Mushrooms",
+        content:
+          "In a large skillet, heat 1 tablespoons of butter and olive oil over low heat, then add mushrooms. Let cook for 10-15 minutes, stirring occasionally until mushrooms are juicy and caramelized."
+      },
+      {
+        header: "Cooking the Rice",
+        content:
+          "While mushrooms are cooking, in a large saucepan heat 1 tablespoon each of butter and olive oil over medium heat. Once hot, add garlic and cook for 30 seconds. Add rice, tossing to coat in the butter and oil, then toast while stirring occasionally for 3-4 minutes. Add in wine, stirring every few minutes until absorbed. Once absorbed, add in 1 cup stock, stirring until absorbed like you did with the wine. Repeat 2-3 more times, until all stock has been added and absorbed. This should take about 15 minutes – I do not stir constantly, but actually just keep an eye on it and stir every few minutes. Taste rice and determine if the they are cooked to your liking (if not, add in 1 more cup of stock and stir)."
+      },
+      {
+        header: "Finishing Touches",
+        content:
+          "Reduce the heat to low and add in salt, pepper, 5 ounces of goat cheese and mushrooms, then stir. Serve with remaining goat cheese crumbled on top and a sprinkling of fresh basil."
+      }
+    ]
+  },
+  {
+    id: 42,
+    title: "Soft Pumpkin Cookies",
+    blurb: `I think these pumpkin cookies are the perfect way to celebrate the fall season!`,
+    cookTime: "30 minutes",
+    source: "https://lovelylittlekitchen.com/soft-pumpkin-cookies/",
+    servings: 36,
+    ingredients: [
+      "2 1/2 cups all-purpose flour",
+      "1 tsp baking soda",
+      "1 tsp baking powder",
+      "1 tsp cinnamon",
+      "1/2 tsp nutmeg",
+      "1/2 tsp salt",
+      "1 1/2 cups granulated sugar",
+      "1/2 cup butter, softened",
+      "1 cup pure pumpkin",
+      "1 egg",
+      "1 tsp vanilla extract",
+      "1 cup powdered sugar"
+    ],
+    steps: `Line baking sheets with parchment paper or spray with non-stick baking spray. Combine flour, baking soda, baking powder, cinnamon, nutmeg, and salt in a medium bowl. Beat sugar and butter with mixer on medium high speed, then blend in pumpkin, egg, and vanilla until incorporated. Gradually mix in flour and dry ingredients. Refrigerate dough for 3-4 hours. Preheat oven to 375 degrees. Scoop dough into one inch balls. Roll in powder sugar, place dough balls on baking sheet (12 per sheet) and bake for 11-13 minutes. Remove from baking sheet to a cooling rack. When completely cool, store cookies in an airtight container.`
+  },
+  {
+    id: 43,
+    title: "Rice Krispie Treats",
+    blurb: `A classic treat.`,
+    cookTime: "1 hour",
+    source: "https://www.shugarysweets.com/perfect-rice-krispie-treats/",
+    servings: 9,
+    ingredients: [
+      "6 tbsp unsalted butter",
+      "16 oz mini marshmallows, divided",
+      "1 tsp pure vanilla extract",
+      "6 cups rice krispies cereal"
+    ],
+    steps: `Line a 9-inch square baking dish with parchment paper. Set aside. In a large saucepan, melt butter over medium heat. Once melted, add in all but 1 cup of the marshmallows. Reduce heat to low and continue stirring until completely melted. Remove from heat and stir in the vanilla. Add the cereal and the remaining 1 cup of marshmallows. Pour into the prepared baking dish. Press GENTLY with your fingertips just until completely spread out (the harder you pack them in, the harder they are to eat). Allow to set, about 1 hour. Cut and enjoy!`
+  },
+  {
+    id: 44,
+    title: "Muddy Buddies",
+    blurb: `Literally the best snack ever`,
+    cookTime: "20 minutes",
+    source: "https://lmld.org/smores-muddy-buddies/",
+    servings: 12,
+    ingredients: [
+      "5 cups golden graham cereal divided",
+      "3 cups chex cereal",
+      "1 cup powdered sugar",
+      "1/2 cup peanut butter",
+      "1 1/2 cup chocolate chips divided",
+      "1 3/4 cup mini marshmallows divided"
+    ],
+    steps: `Combine 4 cups golden graham cereal and 3 cups chex cereal in a large bowl, and set aside. Put 1 cup powdered sugar in a large gallon ziplock bag and set aside. Combine your peanut butter and 1 cup of your chocolate chips in a large microwave safe bowl. Microwave for 30 seconds, then stir, then another 30 seconds, then stir, until creamy. Microwave another 30 seconds if needed. Add 1 cup mini marshmallows to your chocolate peanut butter and stir together so the marshmallows melt a little. Pour your chocolate peanut butter mixture over the cereal and stir together till cereal is completely coated. Carefully scoop chocolate coated cereal into ziplock with powdered sugar. Shake the bag until the cereal is completely coated with powdered sugar. Pour cereal into another large bowl and mix in remaining 1/2 cup chocolate chips, 3/4 cup mini marshmallows, and 1 cup golden graham cereal and serve.`
   }
 ];
 
