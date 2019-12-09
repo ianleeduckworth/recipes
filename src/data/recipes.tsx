@@ -1119,6 +1119,66 @@ const recipes: Recipe[] = [
       "1 3/4 cup mini marshmallows divided"
     ],
     steps: `Combine 4 cups golden graham cereal and 3 cups chex cereal in a large bowl, and set aside. Put 1 cup powdered sugar in a large gallon ziplock bag and set aside. Combine your peanut butter and 1 cup of your chocolate chips in a large microwave safe bowl. Microwave for 30 seconds, then stir, then another 30 seconds, then stir, until creamy. Microwave another 30 seconds if needed. Add 1 cup mini marshmallows to your chocolate peanut butter and stir together so the marshmallows melt a little. Pour your chocolate peanut butter mixture over the cereal and stir together till cereal is completely coated. Carefully scoop chocolate coated cereal into ziplock with powdered sugar. Shake the bag until the cereal is completely coated with powdered sugar. Pour cereal into another large bowl and mix in remaining 1/2 cup chocolate chips, 3/4 cup mini marshmallows, and 1 cup golden graham cereal and serve.`
+  },
+  {
+    id: 45,
+    title: "Tabouli Salad Tabbouleh Tabouleh",
+    blurb: `A tasty tabouleh that we made `,
+    cookTime: "20 minutes",
+    source: "https://www.themediterraneandish.com/tabouli-salad/",
+    servings: 6-8,
+    ingredients: ["1/2 cup extra fine bulgur wheat"
+    "4 firm Roma tomatoes, very finely chopped"
+    "1 English cucumber (hothouse cucumber), very finely chopped"
+    "2 bunches parsley, part of the stems removed, washed and well-dried, very finely chopped"
+    "12–15 fresh mint leaves, stems removed, washed, well-dried, very finely chopped"
+    "4 green onions, white and green parts, very finely chopped"
+    "Salt"
+    "3–4 tbsp lime juice (lemon juice, if you prefer)"
+    "3–4 tbsp Early Harvest extra virgin olive oil"
+    "Romaine lettuce leaves to serve, optional"
+  ],
+    steps: ``
+  },
+  {
+    id: 46,
+    title: "",
+    blurb: ``,
+    cookTime: "",
+    source: "",
+    servings: 0,
+    ingredients: [],
+    steps: ``
+  },
+  {
+    id: 47,
+    title: "",
+    blurb: ``,
+    cookTime: "",
+    source: "",
+    servings: 0,
+    ingredients: [],
+    steps: ``
+  },
+  {
+    id: 48,
+    title: "",
+    blurb: ``,
+    cookTime: "",
+    source: "",
+    servings: 0,
+    ingredients: [],
+    steps: ``
+  },
+  {
+    id: 49,
+    title: "",
+    blurb: ``,
+    cookTime: "",
+    source: "",
+    servings: 0,
+    ingredients: [],
+    steps: ``
   }
 ];
 
