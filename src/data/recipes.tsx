@@ -1238,6 +1238,141 @@ const recipes: Recipe[] = [
       "crusty French bread"
     ],
     steps: `"Preheat your oven to 400 degrees F. Use a sharp knife to cut off the top of the head of garlic so that the inner flesh is revealed. Remove the papery layers on the outside that come off easily (don't take them all off though, you want the head to remain intact.) Place the head of garlic on a square of aluminum foil and drizzle with 2 teaspoons olive oil. Wrap the foil around the garlic, place on a baking sheet, and roast for about 25 minutes. When cool enough to handle, squeeze the soft cloves of garlic into a small saucepan. Mash with a fork. Turn the heat to medium and add cream, wine, onion, and 1 tablespoon of the dip package. When is starts to bubble slightly, add the Parmesan. Stir until the mixture thickens slightly. Add fresh thyme to taste, if you want. Pour the sauce into a 10-inch cast iron skillet. Set aside. Use a sharp knife to cut out the top of the red bell pepper. Remove as much of the core as you can, leaving the pepper in it's original shape. Use a sharp knife or mandoline to slice the pepper into rings. Use a mandoline or a very sharp knife to slice the zucchini, squash, and eggplant. Layer the vegetables in the skillet with the sauce. Start on the outside edge. Layer them in whatever order you want, I did eggplant, zucchini, squash, then pepper. Continue layering until you run out of vegetables. Preheat the oven to 375 degrees F. Sprinkle the remainder of the ranch packet over the vegetables. You don't have to use all of it. Cut out a circle of parchment paper that is about the size of your skillet and lay it on top of the vegetables. This keeps it from getting brown and dried out. Bake at 375 for about 38-40 minutes. Remove from the oven. Toast a slice of bread, spread it with goat cheese, and spoon some of the ratatouille on top. Enjoy!"`
+  },
+  {
+    id: 50,
+    title: "Crash Hot Sweet Potatoes",
+    blurb: `Sweet and spicy potato cakes`,
+    cookTime: "1 hour",
+    source: "http://thecreeksidecook.com/crash-hot-sweet-potatoes/",
+    servings: 4,
+    ingredients: [
+      "1 & ½ tablespoons light brown sugar",
+      "½ teaspoon kosher salt",
+      "½ teaspoon ground cumin",
+      "½ teaspoon New Mexico chili powder",
+      "½ teaspoon smoked sweet paprika",
+      "¼ teaspoon onion powder",
+      "¼ teaspoon chipotle chili powder",
+      "⅛ teaspoon granulated garlic",
+      "10 coarse grinds of black pepper",
+      "2 medium to large sweet potatoes",
+      "2 tablespoons melted butter",
+      "2 tablespoons olive oil"
+    ],
+    steps: `Set a 3 quart sauce pan of water with a teaspoon of kosher salt on a medium flame until it begins to simmer. Oil a large baking sheet, or cover with parchment paper. In a small bowl, mix together all of the dry spices, and set aside. Peel the sweet potatoes, and cut into 1 & ½ inch thick slices. When the water is simmering, add the potato slices and cook for around 10 minutes, until the slices are getting a little soft. Remove the slices to a cooling rack. You can leave them on the rack until they cool off and the outsides are dry, or if you are in a hurry, blot all of the moisture from the surface of the slices. This is important - they have to be dry on the outside or they won't get crispy. Start the oven preheating to 400º Lay the slices of sweet potato on the prepared pan, and use a water glass to gently compress each slice - you want them to flatten out and the edges should get kind of ruffly. Mix the butter and oil together. Using a pastry brush or the back of a spoon, spread a thin layer of the oil and butter mixture on each slice. Sprinkle some of the spice mixture over each slice, and press onto the surface lightly so that it sticks to the potato slices. Gently turn oven each slice, and repeat the oil/butter and dry spice application as you did on the first side. Roast in the oven for about 15 minutes, until the bottom of the slices is getting caramelized and crispy. Carefully flip over each slice and roast another 10 minutes or so, until both sides are crispy and the spice mixture has melted together and turned all nicely brown. Serve immediately.`
+  },
+  {
+    id: 51,
+    title: "Sweet Potato Ravioli",
+    blurb: `A little time consuming but tasty`,
+    cookTime: "1 hour",
+    source:
+      "https://tastykitchen.com/recipes/main-courses/sweet-potato-ravioli-with-pecans-and-herb-brown-butter-sauce/",
+    servings: 4,
+    ingredients: [
+      "FOR THE FILLING:",
+      "1 pound Sweet Potato, Peeled And Cubed",
+      "2 Tablespoons Butter",
+      "½ cups Grated Parmesan Cheese",
+      "½ cups Dried Bread Crumbs",
+      "Salt And Pepper, to taste",
+      "FOR THE PASTA:",
+      "2-½ cups All-purpose Flour",
+      "1 cup Hot Water",
+      "FOR THE SAUCE:",
+      "5 Tablespoons Butter",
+      "1 clove Garlic, Thinly Sliced",
+      "2 Tablespoons Chopped Sage",
+      "2 Tablespoons Chopped Parsley, Divided Use",
+      "2 teaspoons Chopped Thyme",
+      "⅓ cups Toasted Pecans",
+      "Optional Garnish: Parmesan Cheese"
+    ],
+    steps: `[
+      {
+        header: "Making the Filling",
+        content:
+          "Cook the sweet potato in boiling water until tender, about 10 minutes. Drain, add butter and beat with a mixer until smooth and creamy. Stir in the Parmesan cheese, bread crumbs, salt and pepper to taste. Set aside."      },
+      {
+        header: "Making the Pasta",
+        content:
+          "Make a well in the center of the flour, and add in the hot water. Gently stir together with a wooden spoon, using your fingers if necessary to fully combine the ingredients. Allow to sit for a few minutes so it can cool down a bit. Separate the dough into two balls. Set one of the dough balls aside. Take the other one and roll it out into a rectangle. Be sure to flour the board and your rolling pin really well since the dough should still be sticky. Roll it pretty thin, because these things plump up when you cook them. Spoon roughly 1-2 tablespoons of filling near the edge of the dough, leaving a little room. Then spoon some more about an inch away from that, and keep doing this until you have a nice little row of filling ‘dots’. Now, fold the other side of the dough over the little balls of filling. Pinch the edges all the way around the ‘dots’ of filling to seal it in. Take a glass, or a ravioli cutter if you have it (I donâ€™t), and cut out the little mounds of filling and dough. Repeat this process with the other half of the dough. Cook the ravioli in gently boiling water for 4-5 minutes. Drain, and toss in sauce."
+      },
+      {
+        header: "Making the Sauce",
+        content:
+          "In a large skillet melt the butter with the sliced garlic, sage, 1 tablespoon parsley and the thyme and cook over medium heat until the butter is lightly browned. Add the pecans, remaining parsley and cooked raviolis to the sauce and cook for 10 more seconds. Sprinkle with Parmesan cheese and enjoy!"          "
+      }
+    ]`
+  },
+  {
+    id: 52,
+    title: "Quinoa Mexi-Lime Salad",
+    blurb: `Refreshing salad/side`,
+    cookTime: "30 minutes",
+    source:
+      "https://popculture.com/lifestyle/2016/10/28/recipe-quinoa-mexi-lime-salad/",
+    servings: 8,
+    ingredients: [
+      "1¼ cup quinoa, dry and rinsed",
+      "2½ cups low-sodium chicken broth",
+      "1 (15-ounce) can reduced-sodium black beans, drained and rinsed",
+      "1 (15.25-ounce) can low-sodium whole kernel corn, drained and rinsed",
+      "1 red bell pepper, diced",
+      "6 green onions, thinly sliced",
+      "¼ cup chopped fresh cilantro",
+      "1 jalapeño pepper, seeded and finely diced",
+      "⅓ cup lime juice",
+      "¼ cup extra virgin olive oil",
+      "2 tablespoons red wine vinegar",
+      "1 teaspoon ground cumin",
+      "½ teaspoon salt",
+      "½ teaspoon black pepper"
+    ],
+    steps: `In a medium saucepan, combine the quinoa and chicken broth. Bring to a boil over medium-high heat, reduce to a simmer, cover, and cook until the seeds are translucent and have "spiraled out," 12 to 15 minutes. Uncover, fluff with a fork, and set aside to cool for 5 minutes. In a large bowl, combine the black beans, corn, bell pepper, green onions, cilantro and jalapeño. Add the cooled quinoa and stir to mix all the ingredients well. In a small bowl, whisk together the lime juice, olive oil, vinegar, cumin, salt and pepper. Pour the dressing over the quinoa mixture and stir to evenly combine. Refrigerate for at least 1 hour before serving.`
+  },
+  {
+    id: 53,
+    title: "Mushroom and Gruyere Bruschetta",
+    blurb: `Delicious appetizer`,
+    cookTime: "20 minutes",
+    source: "https://theviewfromgreatisland.com/mushroom-gruyere-bruschetta",
+    servings: 2,
+    ingredients: [
+      "1 small loaf ciabatta bread or a crusty baguette",
+      "1 clove garlic, halved",
+      "1 pint cremini mushrooms",
+      "1/4 pound Gruyere cheese, grated (a generous cup)",
+      "1 Tbsp Sherry (or Marsala)",
+      "pinch of salt, if needed",
+      "fresh thyme leaves (about 2 Tbsp, plus more for garnish)",
+      "Fresh cracked black pepper"
+    ],
+    steps: `Cut the bread in half lengthwise, so you have a large cut surface. You will not need the whole loaf, I used about a 6 inch by 6 inch piece of ciabatta. Grill the bread, cut side down, on a hot grill until it starts to get nice char marks. Rub the cut side of the garlic across the bread while it is still hot. Set aside. Dust off the mushrooms with a clean dish cloth. Trim off the tips of the stems, and then thickly slice them. Heat a cast iron or saute pan on medium high, and add the mushrooms and thyme leaves. Dry saute the mushrooms, stirring often so they won't stick to the pan, until they release their moisture and are softened. This will only take a couple of minutes. Add the sherry and let it sizzle for just a few seconds. Stir to deglaze the pan and get up any browned bits from the bottom of the pan. Season with a pinch of salt, if needed. Spoon the mushrooms and any juice onto the bread. Top with the cheese, some black pepper, and a little more fresh thyme. Broil until the cheese is melted. Slice the bread into individual portions and enjoy right away.`
+  },
+  {
+    id: 54,
+    title: "Farfalle Pasta with Spinach, Mushrooms, and Caramelized Onions",
+    blurb: `Tasty pasta`,
+    cookTime: "50 minutes",
+    source:
+      "https://juliasalbum.com/farfalle-with-spinach-mushrooms-caramelized-onions/",
+    servings: 4,
+    ingredients: [
+      "1 tablespoon olive oil",
+      "3 yellow onions , large, sliced",
+      "1/4 teaspoon salt",
+      "1 tablespoon balsamic vinegar",
+      "1 tablespoon olive oil",
+      "10 oz mushrooms , sliced (I used button mushrooms)",
+      "6 oz spinach",
+      "1 cup half-and-half",
+      "1 cup Parmesan cheese , shredded",
+      "1/4 teaspoon salt",
+      "8 oz farfalle pasta"
+    ],
+    steps: `Caramelize onions.  Deglaze pan with balsamic and remove to plate.  Add sliced mushrooms and saute.  Add spinach until wilted.  Add half and half to the veggies and bring to a quick boil, immediately reducing to simmer.  Add 2/3c parmesan and 1/4 tsp salt, stirring continuously.  Once cheese has melted, add caramelized onions back to pan.  Add cooked, drained pasta to sauce, stirring to reheat.  If sauce is too thin, add more parmesan; if too thick, more half and half`
   }
 ];
 
