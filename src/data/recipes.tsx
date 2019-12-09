@@ -1119,6 +1119,125 @@ const recipes: Recipe[] = [
       "1 3/4 cup mini marshmallows divided"
     ],
     steps: `Combine 4 cups golden graham cereal and 3 cups chex cereal in a large bowl, and set aside. Put 1 cup powdered sugar in a large gallon ziplock bag and set aside. Combine your peanut butter and 1 cup of your chocolate chips in a large microwave safe bowl. Microwave for 30 seconds, then stir, then another 30 seconds, then stir, until creamy. Microwave another 30 seconds if needed. Add 1 cup mini marshmallows to your chocolate peanut butter and stir together so the marshmallows melt a little. Pour your chocolate peanut butter mixture over the cereal and stir together till cereal is completely coated. Carefully scoop chocolate coated cereal into ziplock with powdered sugar. Shake the bag until the cereal is completely coated with powdered sugar. Pour cereal into another large bowl and mix in remaining 1/2 cup chocolate chips, 3/4 cup mini marshmallows, and 1 cup golden graham cereal and serve.`
+  },
+  {
+    id: 45,
+    title: "Tabouli Salad Tabbouleh Tabouleh",
+    blurb: `A tasty tabouleh that we made `,
+    cookTime: "20 minutes",
+    source: "https://www.themediterraneandish.com/tabouli-salad/",
+    servings: 6 - 8,
+    ingredients: [
+      "1/2 cup extra fine bulgur wheat",
+      "4 firm Roma tomatoes, very finely chopped",
+      "1 English cucumber (hothouse cucumber), very finely chopped",
+      "2 bunches parsley, part of the stems removed, washed and well-dried, very finely chopped",
+      "12–15 fresh mint leaves, stems removed, washed, well-dried, very finely chopped",
+      "4 green onions, white and green parts, very finely chopped",
+      "Salt",
+      "3–4 tbsp lime juice (lemon juice, if you prefer)",
+      "3–4 tbsp Early Harvest extra virgin olive oil",
+      "Romaine lettuce leaves to serve, optional"
+    ],
+    steps: `Wash the bulgur wheat and soak it in water for 5-7 minute. Drain very well (squeeze the bulgur wheat by hand to get rid of any excess water). Set aside.  Very finely chop the vegetables, herbs and green onions as indicated above. Be sure to place the tomatoes in a colander to drain excess juice.  Place the chopped vegetables, herbs and green onions in a mixing bowl or dish. Add the bulgur and season with salt. Mix gently.  Now add the the lime juice and olive oil and mix again.  For best results, cover the tabouli and refrigerate for 30 minutes. Transfer to a serving platter. If you like, serve the tabouli with a side of pita and romaine lettuce leaves, which act as wraps or “boats” for the tabouli.`
+  },
+  {
+    id: 46,
+    title: "Cranberry, Apple, and Almond Quinoa",
+    blurb: `Semi sweet quinoa salad - good for events`,
+    cookTime: "30 minutes",
+    source:
+      "https://ohsheglows.com/2011/02/10/lovely-light-cranberry-apple-and-almond-quinoa/",
+    servings: 8,
+    ingredients: [
+      "1 cup uncooked quinoa, washed well",
+      "1 tablespoon +1 tsp olive oil, divided",
+      "1 cup chopped onion",
+      "1 cup diced carrot (I used 1 medium)",
+      "2-3 garlic cloves, minced",
+      "2 cups vegetable broth",
+      "1/4-1/2 tsp kosher salt, to taste",
+      "1/2 tsp cinnamon",
+      "1 1/2 cups diced Granny Smith apple, not peeled (one large apple)",
+      "~20 almonds, toasted",
+      "1 tsp. vanilla",
+      "1/2 cup dried cranberries (could also be delicious with dried cherries)",
+      "black pepper, to taste",
+      "1 tbsp pure maple syrup"
+    ],
+    steps: `1. Heat 1 tbsp olive oil in pan over medium heat. Add chopped onion, carrots and garlic and sauté until the onion is translucent. Add broth, quinoa, salt, and cinnamon and bring to a boil. Reduce heat to simmer, cover and let sit for 20 minutes or until liquid is gone. Be sure to keep an eye on it and stir it often so it doesn’t burn. Remove from heat; stir to fluff.  2. Meanwhile, heat oven to 350F and toast almonds. Roughly chop toasted almonds.  3. Heat 1 tsp olive oil in a nonstick pot or skillet. Add chopped apple and vanilla and sauté for about 5 minutes until apple starts to turn golden in colour but before it gets mushy. Add apple, almonds, cranberries and pepper to quinoa and mix thoroughly. Serve hot or cold, as a main dish or a side with a protein source. Makes about 3-4 cups.`
+  },
+  {
+    id: 47,
+    title: "French Onion Soup",
+    blurb: `Tasty easy french onion soup`,
+    cookTime: "2 hours",
+    source: "https://www.simplyrecipes.com/recipes/french_onion_soup/",
+    servings: 6 - 8,
+    ingredients: [
+      "6 large onions",
+      "4 tablespoons extra virgin olive oil",
+      "2 tablespoons butter",
+      "1 teaspoon of sugar",
+      "Salt",
+      "2 cloves garlic, minced",
+      "8 cups of beef stock, chicken stock, or a combination of the two (traditionally the soup is made with beef stock)",
+      "1/2 cup of red or white wine",
+      "2 bay leaves",
+      "1 tablespoon (loose) of fresh thyme (can also use a few sprigs of fresh thyme) OR 1/2 teaspoon dried thyme (more to taste)",
+      "1/2 teaspoon freshly ground black pepper",
+      "2 tablespoons brandy (optional)",
+      "8 slices French bread or baguette cut 1-inch thick",
+      "1 1/2 cups of grated Swiss Gruyere and a sprinkling of Parmesan"
+    ],
+    steps: `Caramelize the onions.  Deglaze with wine.  Add stock and seasonings.  Toast bread with cheese`
+  },
+  {
+    id: 48,
+    title: "Baba Ganoush Roasted Eggplant Dip",
+    blurb: `Really tasty hummus-like dip`,
+    cookTime: "50 minutes",
+    source:
+      "https://lovelylittlekitchen.com/roasted-eggplant-dip-baba-ganoush/",
+    servings: 8,
+    ingredients: [
+      "2–3 small to medium eggplants (about 3 pounds)",
+      "2 tablespoons tahini",
+      "1 tablespoon fresh lemon juice",
+      "1 teaspoon McCormick Minced Garlic",
+      "1/2 teaspoon McCormick Ground Cumin",
+      "1/2 teaspoon McCormick Smoked Paprika",
+      "3 tablespoons olive oil, divided",
+      "Salt and McCormick Ground Black Pepper, to taste",
+      "2 tablespoons chopped fresh parsley"
+    ],
+    steps: `Preheat oven to broil. Prick eggplants all over with fork. Place on foil-lined shallow baking dish . Broil about 12 minutes or until skin is charred on all sides, turning occasionally. Reduce oven temperature to 400 degrees F. Bake 15-20 minutes longer or until eggplant flesh is tender. Let stand long enough to handle.  Cut eggplants in half lengthwise. Scoop flesh into colander, discarding charred skin and as many of the seeds as possible. Drain 30 minutes, stirring occasionally. Place eggplant, tahini, lemon juice, minced garlic, cumin, and smoked paprika in food processor, and cover. Process until smooth. If needed, add 1-2 tablespoons of the olive oil for smooth texture. Season to taste with salt and pepper. Spoon dip into serving bowl. Drizzle with remaining 1 tablespoon olive oil. Sprinkle with parsley and toasted sesame seeds. Serve with pita wedges, French bread slices, or crackers.`
+  },
+  {
+    id: 49,
+    title: "Ratatouille",
+    blurb: `An old favorite!  Great for using summertime veggies`,
+    cookTime: "1 hour",
+    source: "https://thefoodcharlatan.com/roasted-garlic-ratatouille-giveaway/",
+    servings: 4 - 6,
+    ingredients: [
+      "1 head garlic",
+      "2 teaspoons olive oil",
+      "3/4 cup cream",
+      "1 teaspoon white wine",
+      "1/4 chopped onion",
+      "1 package Hidden Valley Greek Yogurt Dips (not made), divided",
+      "1/4 cup fresh Parmesan",
+      "fresh thyme, optional",
+      "1 long red bell pepper",
+      "1 medium-large zucchini",
+      "1 large yellow squash",
+      "1 eggplant",
+      "grated Parmesan, to garnish",
+      "at least 4 ounces softened goat cheese, for spreading",
+      "crusty French bread"
+    ],
+    steps: `"Preheat your oven to 400 degrees F. Use a sharp knife to cut off the top of the head of garlic so that the inner flesh is revealed. Remove the papery layers on the outside that come off easily (don't take them all off though, you want the head to remain intact.) Place the head of garlic on a square of aluminum foil and drizzle with 2 teaspoons olive oil. Wrap the foil around the garlic, place on a baking sheet, and roast for about 25 minutes. When cool enough to handle, squeeze the soft cloves of garlic into a small saucepan. Mash with a fork. Turn the heat to medium and add cream, wine, onion, and 1 tablespoon of the dip package. When is starts to bubble slightly, add the Parmesan. Stir until the mixture thickens slightly. Add fresh thyme to taste, if you want. Pour the sauce into a 10-inch cast iron skillet. Set aside. Use a sharp knife to cut out the top of the red bell pepper. Remove as much of the core as you can, leaving the pepper in it's original shape. Use a sharp knife or mandoline to slice the pepper into rings. Use a mandoline or a very sharp knife to slice the zucchini, squash, and eggplant. Layer the vegetables in the skillet with the sauce. Start on the outside edge. Layer them in whatever order you want, I did eggplant, zucchini, squash, then pepper. Continue layering until you run out of vegetables. Preheat the oven to 375 degrees F. Sprinkle the remainder of the ranch packet over the vegetables. You don't have to use all of it. Cut out a circle of parchment paper that is about the size of your skillet and lay it on top of the vegetables. This keeps it from getting brown and dried out. Bake at 375 for about 38-40 minutes. Remove from the oven. Toast a slice of bread, spread it with goat cheese, and spoon some of the ratatouille on top. Enjoy!"`
   }
 ];
 
