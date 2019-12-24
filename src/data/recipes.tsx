@@ -1238,6 +1238,27 @@ const recipes: Recipe[] = [
       "crusty French bread"
     ],
     steps: `"Preheat your oven to 400 degrees F. Use a sharp knife to cut off the top of the head of garlic so that the inner flesh is revealed. Remove the papery layers on the outside that come off easily (don't take them all off though, you want the head to remain intact.) Place the head of garlic on a square of aluminum foil and drizzle with 2 teaspoons olive oil. Wrap the foil around the garlic, place on a baking sheet, and roast for about 25 minutes. When cool enough to handle, squeeze the soft cloves of garlic into a small saucepan. Mash with a fork. Turn the heat to medium and add cream, wine, onion, and 1 tablespoon of the dip package. When is starts to bubble slightly, add the Parmesan. Stir until the mixture thickens slightly. Add fresh thyme to taste, if you want. Pour the sauce into a 10-inch cast iron skillet. Set aside. Use a sharp knife to cut out the top of the red bell pepper. Remove as much of the core as you can, leaving the pepper in it's original shape. Use a sharp knife or mandoline to slice the pepper into rings. Use a mandoline or a very sharp knife to slice the zucchini, squash, and eggplant. Layer the vegetables in the skillet with the sauce. Start on the outside edge. Layer them in whatever order you want, I did eggplant, zucchini, squash, then pepper. Continue layering until you run out of vegetables. Preheat the oven to 375 degrees F. Sprinkle the remainder of the ranch packet over the vegetables. You don't have to use all of it. Cut out a circle of parchment paper that is about the size of your skillet and lay it on top of the vegetables. This keeps it from getting brown and dried out. Bake at 375 for about 38-40 minutes. Remove from the oven. Toast a slice of bread, spread it with goat cheese, and spoon some of the ratatouille on top. Enjoy!"`
+  },
+  {
+    id: 50,
+    title: "Sausage CheddarBites",
+    blurb: `Bite-size appetizers with shredded cheddar cheese and breakfast sausage - a little spicy and totally addicting!`,
+    cookTime: "1 hour",
+    source:
+      "https://www.browneyedbaker.com/sausage-cheddar-bites/#wprm-recipe-container-45918",
+    servings: 50,
+    ingredients: [
+      "1 1/4 cups all-purpose flour",
+      "1 1/2 teaspoons baking powder",
+      "1/2 teaspoon kosher salt",
+      "1/2 teaspoon cayenne pepper",
+      "1/4 teaspoon ground black pepper",
+      "8 ounces shredded cheddar cheese(about 2 cups shredded)",
+      "16 ounces bulk breakfast sausage",
+      "1/2 large yellow onion(grated)",
+      "3 tablespoons unsalted butter(melted)"
+    ],
+    steps: `Preheat oven to 400 degrees F. Line a rimmed baking sheet with parchment paper; set aside. In a large bowl, whisk together the flour, baking powder, salt, cayenne and black pepper. Add the shredded cheese and toss to evenly coat with the flour mixture. Add the sausage, onion and melted butter, and mix until a cohesive mass forms. Using your hands, break off pieces of the mixture and roll into 1-inch balls (I used a small cookie scoop). Place on the prepared baking sheet about ½-inch apart. Bake until the sausage is cooked through, about 25 to 30 minutes. Using tongs, transfer the warm sausage bites to a serving platter, insert toothpicks, and serve warm. These are best served as soon as they are baked, but leftovers can be stored in an airtight container in the refrigerator for up to 3 days. Reheat before serving.`
   }
 ];
 
