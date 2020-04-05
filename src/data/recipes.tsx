@@ -1259,7 +1259,23 @@ const recipes: Recipe[] = [
       "3 tablespoons unsalted butter(melted)"
     ],
     steps: `Preheat oven to 400 degrees F. Line a rimmed baking sheet with parchment paper; set aside. In a large bowl, whisk together the flour, baking powder, salt, cayenne and black pepper. Add the shredded cheese and toss to evenly coat with the flour mixture. Add the sausage, onion and melted butter, and mix until a cohesive mass forms. Using your hands, break off pieces of the mixture and roll into 1-inch balls (I used a small cookie scoop). Place on the prepared baking sheet about ½-inch apart. Bake until the sausage is cooked through, about 25 to 30 minutes. Using tongs, transfer the warm sausage bites to a serving platter, insert toothpicks, and serve warm. These are best served as soon as they are baked, but leftovers can be stored in an airtight container in the refrigerator for up to 3 days. Reheat before serving.`
-  }
+  },
+  {
+  id: 51,
+  title: "Latkes",
+  blurb: `A great potato pancakes recipe courtesy of Binging with Babish`,
+  cookTime: "2 hours",
+  source: "https://www.youtube.com/watch?v=AwOoMG3J4h8",
+  servings: 6,
+  ingredients: [
+    '4 large russet potatoes',
+    '1 large onion',
+    '4 eggs',
+    '1 cup panko breadcrumbs',
+    '1 to 2 cups of canola oil (for frying)'
+  ],
+  steps: `Peel potatoes and discard peels.  Grate potatoes on the large side of the box grater along with the onion into a large mixing bowl.  Switch periodically between the onion and the potatoes to premix them.  Dump potato/onion mixture onto a large towel and wring them out into a bowl to remove as much liquid as possible.  Let the potato water sit in the bowl for about 5 minutes.  Discard the water but save the starch that has settled to the bottom.  Crack 4 large eggs into the bowl containing the starch and beat.  Combine eggs, potatoes, and breadcrumbs together in the large mixing bowl and mix well to combine.  Form the mixture into balls (slightly larger than golf balls) and press in order to make cragly edges.  Pour about 1/2 inch of canola oil into a skillet and heat to 375 degrees F.  Fry on each side for 4 to 5 minutes.  Drain on a wire rack and salt immediately.`
+},
 ];
 
 // {
