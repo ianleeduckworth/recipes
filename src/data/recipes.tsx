@@ -1122,8 +1122,8 @@ const recipes: Recipe[] = [
   },
   {
     id: 45,
-    title: "Tabouli Salad Tabbouleh Tabouleh",
-    blurb: `A tasty tabouleh that we made `,
+    title: "Tabouli Salad",
+    blurb: `A tasty tabouli that we made `,
     cookTime: "20 minutes",
     source: "https://www.themediterraneandish.com/tabouli-salad/",
     servings: 6 - 8,
@@ -1139,7 +1139,8 @@ const recipes: Recipe[] = [
       "3–4 tbsp Early Harvest extra virgin olive oil",
       "Romaine lettuce leaves to serve, optional"
     ],
-    steps: `Wash the bulgur wheat and soak it in water for 5-7 minute. Drain very well (squeeze the bulgur wheat by hand to get rid of any excess water). Set aside.  Very finely chop the vegetables, herbs and green onions as indicated above. Be sure to place the tomatoes in a colander to drain excess juice.  Place the chopped vegetables, herbs and green onions in a mixing bowl or dish. Add the bulgur and season with salt. Mix gently.  Now add the the lime juice and olive oil and mix again.  For best results, cover the tabouli and refrigerate for 30 minutes. Transfer to a serving platter. If you like, serve the tabouli with a side of pita and romaine lettuce leaves, which act as wraps or “boats” for the tabouli.`
+    steps: `Wash the bulgur wheat and soak it in water for 5-7 minute. Drain very well (squeeze the bulgur wheat by hand to get rid of any excess water). Set aside.  Very finely chop the vegetables, herbs and green onions as indicated above. Be sure to place the tomatoes in a colander to drain excess juice.  Place the chopped vegetables, herbs and green onions in a mixing bowl or dish. Add the bulgur and season with salt. Mix gently.  Now add the the lime juice and olive oil and mix again.  For best results, cover the tabouli and refrigerate for 30 minutes. Transfer to a serving platter. If you like, serve the tabouli with a side of pita and romaine lettuce leaves, which act as wraps or “boats” for the tabouli.`,
+    tags: ['tabouli', 'tabbouleh', 'tabouleh']
   },
   {
     id: 46,
