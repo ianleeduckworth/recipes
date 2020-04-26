@@ -1277,6 +1277,30 @@ const recipes: Recipe[] = [
   ],
   steps: `Peel potatoes and discard peels.  Grate potatoes on the large side of the box grater along with the onion into a large mixing bowl.  Switch periodically between the onion and the potatoes to premix them.  Dump potato/onion mixture onto a large towel and wring them out into a bowl to remove as much liquid as possible.  Let the potato water sit in the bowl for about 5 minutes.  Discard the water but save the starch that has settled to the bottom.  Crack 4 large eggs into the bowl containing the starch and beat.  Combine eggs, potatoes, and breadcrumbs together in the large mixing bowl and mix well to combine.  Form the mixture into balls (slightly larger than golf balls) and press in order to make cragly edges.  Pour about 1/2 inch of canola oil into a skillet and heat to 375 degrees F.  Fry on each side for 4 to 5 minutes.  Drain on a wire rack and salt immediately.`
 },
+{
+  id: 52,
+  title: "Swiss Chard Bechamel Pasta",
+  blurb: `A reasonably healthy yet satisfying pasta that hits almost all your food groups but doesn't make you hate your life.`,
+  cookTime: "1 hour",
+  servings: 6,
+  ingredients: [
+    '1 onion',
+    '3 cloves of garlic (or 1 head of green garlic)',
+    '1 box of pasta',
+    '3 tbsp butter',
+    '3 tbsp flour',
+    '2/3 cup milk',
+    '1 large bunch of swiss chard',
+    'sausage to taste (about 1/2 box) (can use turkey if desired)',
+    '3 sprigs oregano',
+    '1 sprig sage',
+    '5 to 10 sprigs thyme',
+    '3/4 cup white wine',
+    '1 tbsp olive oil'
+  ],
+  tags: ['easy', 'pasta'],
+  steps: `Finely dice the onion and garlic.  Roughly chop the swiss chard into strips; wash and set aside.  Pour olive oil into large high walled pan and heat over high heat (this will encourage browning) until shimmmering.  Pour in the onions and cook until starting to soften.  Add sausage and cook until warmed or cooked through (depending on if it's precooked).  Add the garlic and cook for about 30 seconds.  Deglaze with white wine and scrape up all the fond from the bottom of the pan.  Simmer for 3 to 4 minutes or until most of the alcohol has started to cook off and the mixture is just starting to thicken.  Add 1/2 cup pasta water and stir to incorporate.  Simmer until mixture has begun to thicken.  Add flour and stir continuously for about 1 minute.  Add butter and stir continuously until well combined.  Add milk and 1/3 cup pasta water and stir continuously until well combined.  Add swiss chard and cook down, stirring occasionally.  Once the swiss chard is mostly cooked down add all the herbs to the mixture.  Once the sauce is desirably thickened, add the cooked pasta to the pan.  Season to taste with salt and pepper (or whatever other seasonings) and serve.`
+},
 ];
 
 // {
