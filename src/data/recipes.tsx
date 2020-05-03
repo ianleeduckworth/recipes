@@ -1321,7 +1321,7 @@ const recipes: Recipe[] = [
   {
     id: 54,
     title: "Millionaire's Shortbread",
-    blurb: `A shortbread topped with caramel and chocolate.  Courtesy of Binging with Babish`,
+    blurb: `A shortbread topped with caramel and melted chocolate.  Courtesy of Binging with Babish`,
     cookTime: "1 hour",
     source: "https://www.youtube.com/watch?v=GWAY5i3CMpo",
     servings: 24,
