@@ -1262,62 +1262,98 @@ const recipes: Recipe[] = [
     steps: `Preheat oven to 400 degrees F. Line a rimmed baking sheet with parchment paper; set aside. In a large bowl, whisk together the flour, baking powder, salt, cayenne and black pepper. Add the shredded cheese and toss to evenly coat with the flour mixture. Add the sausage, onion and melted butter, and mix until a cohesive mass forms. Using your hands, break off pieces of the mixture and roll into 1-inch balls (I used a small cookie scoop). Place on the prepared baking sheet about ½-inch apart. Bake until the sausage is cooked through, about 25 to 30 minutes. Using tongs, transfer the warm sausage bites to a serving platter, insert toothpicks, and serve warm. These are best served as soon as they are baked, but leftovers can be stored in an airtight container in the refrigerator for up to 3 days. Reheat before serving.`
   },
   {
-  id: 51,
-  title: "Latkes",
-  blurb: `A great potato pancakes recipe courtesy of Binging with Babish`,
-  cookTime: "2 hours",
-  source: "https://www.youtube.com/watch?v=AwOoMG3J4h8",
-  servings: 6,
-  ingredients: [
-    '4 large russet potatoes',
-    '1 large onion',
-    '4 eggs',
-    '1 cup panko breadcrumbs',
-    '1 to 2 cups of canola oil (for frying)'
-  ],
-  steps: `Peel potatoes and discard peels.  Grate potatoes on the large side of the box grater along with the onion into a large mixing bowl.  Switch periodically between the onion and the potatoes to premix them.  Dump potato/onion mixture onto a large towel and wring them out into a bowl to remove as much liquid as possible.  Let the potato water sit in the bowl for about 5 minutes.  Discard the water but save the starch that has settled to the bottom.  Crack 4 large eggs into the bowl containing the starch and beat.  Combine eggs, potatoes, and breadcrumbs together in the large mixing bowl and mix well to combine.  Form the mixture into balls (slightly larger than golf balls) and press in order to make cragly edges.  Pour about 1/2 inch of canola oil into a skillet and heat to 375 degrees F.  Fry on each side for 4 to 5 minutes.  Drain on a wire rack and salt immediately.`
-},
-{
-  id: 52,
-  title: "Swiss Chard Bechamel Pasta",
-  blurb: `A reasonably healthy yet satisfying pasta that hits almost all your food groups but doesn't make you hate your life.`,
-  cookTime: "1 hour",
-  servings: 6,
-  ingredients: [
-    '1 onion',
-    '3 cloves of garlic (or 1 head of green garlic)',
-    '1 box of pasta',
-    '3 tbsp butter',
-    '3 tbsp flour',
-    '2/3 cup milk',
-    '1 large bunch of swiss chard',
-    'sausage to taste (about 1/2 box) (can use turkey if desired)',
-    '3 sprigs oregano',
-    '1 sprig sage',
-    '5 to 10 sprigs thyme',
-    '3/4 cup white wine',
-    '1 tbsp olive oil'
-  ],
-  tags: ['easy', 'pasta'],
-  steps: `Finely dice the onion and garlic.  Roughly chop the swiss chard into strips; wash and set aside.  Pour olive oil into large high walled pan and heat over high heat (this will encourage browning) until shimmmering.  Pour in the onions and cook until starting to soften.  Add sausage and cook until warmed or cooked through (depending on if it's precooked).  Add the garlic and cook for about 30 seconds.  Deglaze with white wine and scrape up all the fond from the bottom of the pan.  Simmer for 3 to 4 minutes or until most of the alcohol has started to cook off and the mixture is just starting to thicken.  Add 1/2 cup pasta water and stir to incorporate.  Simmer until mixture has begun to thicken.  Add flour and stir continuously for about 1 minute.  Add butter and stir continuously until well combined.  Add milk and 1/3 cup pasta water and stir continuously until well combined.  Add swiss chard and cook down, stirring occasionally.  Once the swiss chard is mostly cooked down add all the herbs to the mixture.  Once the sauce is desirably thickened, add the cooked pasta to the pan.  Season to taste with salt and pepper (or whatever other seasonings) and serve.`
-},
-{
-  id: 53,
-  title: "Egg Salad",
-  blurb: `Classic egg salad.  Great on sandwiches or by itself and is incredibly easy to make.`,
-  cookTime: "40 minutes",
-  source: "https://www.allrecipes.com/recipe/147103/delicious-egg-salad-for-sandwiches/",
-  servings: 4,
-  ingredients: [
-    "8 hard-boiled eggs",
-    "1/2 cup mayonnaise",
-    "1 tsp yellow musgard",
-    "1/4 cup chopped green onion",
-    "salt and pepper to taste",
-    "1/4 tsp paprika (smoked if you prefer)"
-  ],
-  steps: `Roughly chop the eggs and place into a bowl.  Stir in the mayonnaise, mustard and green onions.  Season with salt, pepper, and paprika.`
-},
+    id: 51,
+    title: "Latkes",
+    blurb: `A great potato pancakes recipe courtesy of Binging with Babish`,
+    cookTime: "2 hours",
+    source: "https://www.youtube.com/watch?v=AwOoMG3J4h8",
+    servings: 6,
+    ingredients: [
+      '4 large russet potatoes',
+      '1 large onion',
+      '4 eggs',
+      '1 cup panko breadcrumbs',
+      '1 to 2 cups of canola oil (for frying)'
+    ],
+    steps: `Peel potatoes and discard peels.  Grate potatoes on the large side of the box grater along with the onion into a large mixing bowl.  Switch periodically between the onion and the potatoes to premix them.  Dump potato/onion mixture onto a large towel and wring them out into a bowl to remove as much liquid as possible.  Let the potato water sit in the bowl for about 5 minutes.  Discard the water but save the starch that has settled to the bottom.  Crack 4 large eggs into the bowl containing the starch and beat.  Combine eggs, potatoes, and breadcrumbs together in the large mixing bowl and mix well to combine.  Form the mixture into balls (slightly larger than golf balls) and press in order to make cragly edges.  Pour about 1/2 inch of canola oil into a skillet and heat to 375 degrees F.  Fry on each side for 4 to 5 minutes.  Drain on a wire rack and salt immediately.`
+  },
+  {
+    id: 52,
+    title: "Swiss Chard Bechamel Pasta",
+    blurb: `A reasonably healthy yet satisfying pasta that hits almost all your food groups but doesn't make you hate your life.`,
+    cookTime: "1 hour",
+    servings: 6,
+    ingredients: [
+      '1 onion',
+      '3 cloves of garlic (or 1 head of green garlic)',
+      '1 box of pasta',
+      '3 tbsp butter',
+      '3 tbsp flour',
+      '2/3 cup milk',
+      '1 large bunch of swiss chard',
+      'sausage to taste (about 1/2 box) (can use turkey if desired)',
+      '3 sprigs oregano',
+      '1 sprig sage',
+      '5 to 10 sprigs thyme',
+      '3/4 cup white wine',
+      '1 tbsp olive oil'
+    ],
+    tags: ['easy', 'pasta'],
+    steps: `Finely dice the onion and garlic.  Roughly chop the swiss chard into strips; wash and set aside.  Pour olive oil into large high walled pan and heat over high heat (this will encourage browning) until shimmmering.  Pour in the onions and cook until starting to soften.  Add sausage and cook until warmed or cooked through (depending on if it's precooked).  Add the garlic and cook for about 30 seconds.  Deglaze with white wine and scrape up all the fond from the bottom of the pan.  Simmer for 3 to 4 minutes or until most of the alcohol has started to cook off and the mixture is just starting to thicken.  Add 1/2 cup pasta water and stir to incorporate.  Simmer until mixture has begun to thicken.  Add flour and stir continuously for about 1 minute.  Add butter and stir continuously until well combined.  Add milk and 1/3 cup pasta water and stir continuously until well combined.  Add swiss chard and cook down, stirring occasionally.  Once the swiss chard is mostly cooked down add all the herbs to the mixture.  Once the sauce is desirably thickened, add the cooked pasta to the pan.  Season to taste with salt and pepper (or whatever other seasonings) and serve.`
+  },
+  {
+    id: 53,
+    title: "Egg Salad",
+    blurb: `Classic egg salad.  Great on sandwiches or by itself and is incredibly easy to make.`,
+    cookTime: "10 minutes",
+    source: "https://www.allrecipes.com/recipe/147103/delicious-egg-salad-for-sandwiches/",
+    servings: 4,
+    ingredients: [
+      "8 hard-boiled eggs",
+      "1/2 cup mayonnaise",
+      "1 tsp yellow musgard",
+      "1/4 cup chopped green onion",
+      "salt and pepper to taste",
+      "1/4 tsp paprika (smoked if you prefer)"
+    ],
+    steps: `Roughly chop the eggs and place into a bowl.  Stir in the mayonnaise, mustard and green onions.  Season with salt, pepper, and paprika.`
+  },
+  {
+    id: 54,
+    title: "Millionaire's Shortbread",
+    blurb: `A shortbread topped with caramel and chocolate.  Courtesy of Binging with Babish`,
+    cookTime: "1 hour",
+    source: "https://www.youtube.com/watch?v=GWAY5i3CMpo",
+    servings: 24,
+    ingredients: [
+      '1/2 cup brown sugar (for shortbread)',
+      '2 tsp vanilla extract',
+      '2 tsp kosher salt',
+      '1 cup melted unsalted butter (for shortbread)',
+      '2 cups all purpose flour (might require a little more)',
+      '1/2 cup unsalted butter (for caramel)',
+      '1 14 oz can sweetened condensed milk',
+      '1 cup light brown sugar (for caramel)',
+      '1/2 cup corn syrup',
+      '1/2 cup heavy cream',
+      '1 tsp kosher salt (for caramel)',
+      '8 oz chocolate (either wafers or chips)',
+    ],
+    steps: [
+      {
+        header: 'Making the shortbread',
+        content: 'In a large mixing bowl, combine brown sugar, vanilla extract, kosher salt and melted unsalted butter in a bowl.  Whisk to combine until silky and smooth.  Add all purpose flour and combine.  The proper consistency is a dough that holds its shape when pressed but is still crumbly.  Cut foil to fit in the bottom of a lasagna pan (cut it in both directions so you have two layers and make sure to cut the foil extra long so you can use the foil to lift the shortbread out later) and grease the foil.  Dump in the dough and press down hard with a metal spatula until it is packed evenly.  Dock the shortbread using a fork.  Bake in a 350 degree oven for 17 to 22 minutes.  Let cool completely (about 2 hours)',
+      },
+      {
+        header: 'Making caramel',
+        content: 'In a large mixing bowl, combine unsalted butter, sweetened condensed milk, light brown sugar, corn syrup, heavy cream, and kosher salt.  Stir to combine with a whisk over medium heat on the stove.  Bring to a smimmer and whisk frequently until it hits 236 degrees F (it will stall around 225 but just keep going).  Pour over shortbread mixture.'
+      },
+      {
+        header: 'Final steps',
+        content: 'Pour caramel mixture over the shortbread and use an offset spatula to get it even and into all corners.  Tap a few times on the counter in order to even out and pop bubbles.  Of the 8 oz of chocolate, reserve about 2 oz and roughly chop it.  Set aside.  Roughly chop the remaining chocolate and then melt chocolate using a double boiler system.  Do not allow it to get over 120 degrees F.  Stir in reserved chocolate.  Once it reaches 82 degrees F, pour it over the cooled caramel.  Tap on the table to even it and pop the bubbles.  Cover and refrigerate until the chocolate is set.  Remove from the pan using the aluminum foil and then remove aluminum foil.  Slice into bars.  Refrigerate any leftovers.'
+      }
+    ]
+  },
 ];
 
 // {
