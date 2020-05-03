@@ -1301,6 +1301,23 @@ const recipes: Recipe[] = [
   tags: ['easy', 'pasta'],
   steps: `Finely dice the onion and garlic.  Roughly chop the swiss chard into strips; wash and set aside.  Pour olive oil into large high walled pan and heat over high heat (this will encourage browning) until shimmmering.  Pour in the onions and cook until starting to soften.  Add sausage and cook until warmed or cooked through (depending on if it's precooked).  Add the garlic and cook for about 30 seconds.  Deglaze with white wine and scrape up all the fond from the bottom of the pan.  Simmer for 3 to 4 minutes or until most of the alcohol has started to cook off and the mixture is just starting to thicken.  Add 1/2 cup pasta water and stir to incorporate.  Simmer until mixture has begun to thicken.  Add flour and stir continuously for about 1 minute.  Add butter and stir continuously until well combined.  Add milk and 1/3 cup pasta water and stir continuously until well combined.  Add swiss chard and cook down, stirring occasionally.  Once the swiss chard is mostly cooked down add all the herbs to the mixture.  Once the sauce is desirably thickened, add the cooked pasta to the pan.  Season to taste with salt and pepper (or whatever other seasonings) and serve.`
 },
+{
+  id: 53,
+  title: "Egg Salad",
+  blurb: `Classic egg salad.  Great on sandwiches or by itself and is incredibly easy to make.`,
+  cookTime: "40 minutes",
+  source: "https://www.allrecipes.com/recipe/147103/delicious-egg-salad-for-sandwiches/",
+  servings: 4,
+  ingredients: [
+    "8 hard-boiled eggs",
+    "1/2 cup mayonnaise",
+    "1 tsp yellow musgard",
+    "1/4 cup chopped green onion",
+    "salt and pepper to taste",
+    "1/4 tsp paprika (smoked if you prefer)"
+  ],
+  steps: `Roughly chop the eggs and place into a bowl.  Stir in the mayonnaise, mustard and green onions.  Season with salt, pepper, and paprika.`
+},
 ];
 
 // {
