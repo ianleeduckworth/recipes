@@ -1,4 +1,8 @@
 export enum Routes {
   home = "/",
-  recipes = "/recipes"
+  recipe = "/recipe",
+  recipes = "/recipes",
+  login = "/login",
+  addRecipe = "/addRecipe",
+  jsonImporter = "/jsonImporter"
 }

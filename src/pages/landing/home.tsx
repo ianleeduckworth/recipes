@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Home: React.FC<{}> = () => {
+export const HomeComponent = () => {
   return (
     <>
       <div className="container">
@@ -18,4 +18,4 @@ export const Home: React.FC<{}> = () => {
   );
 };
 
-export default Home;
+export const Home = HomeComponent;

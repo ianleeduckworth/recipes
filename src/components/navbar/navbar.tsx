@@ -1,66 +1,80 @@
 import * as React from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { withRouter, RouteComponentProps, Link } from "react-router-dom";
 import { Routes } from "../../data/routes";
 import "./navbar.scss";
+import { ApplicationState } from "../../reducers/rootReducer";
+import { auth } from '../../firebase';
 
-interface NavbarProps {
+interface NavbarProps extends RouteComponentProps {
   filterRecipes: (filterBy: string) => void;
-  history: any;
+  currentUser?: string;
 }
 
-interface NavbarState {
-  searchBarValue: string;
-}
+const NavbarComponent = (props: NavbarProps) => {
+  const { history, filterRecipes, currentUser } = props;
+  const [searchBarValue, setSearchBarValue] = React.useState('');
 
-export class Navbar extends React.Component<NavbarProps, NavbarState> {
-  constructor(props: NavbarProps) {
-    super(props);
-
-    this.state = {
-      searchBarValue: ""
-    };
-  }
-
-  onSubmit = (e: any) => {
+  const onLogin = (e: any) => {
     e.preventDefault();
-    this.props.filterRecipes(this.state.searchBarValue);
-    this.props.history.push(Routes.recipes);
-  };
-
-  onSearchChange = (e: any) => {
-    this.setState({ searchBarValue: e.target.value });
-  };
-
-  render() {
-    return (
-      <>
-        <nav className="navbar navbar-expand-lg bg-light">
-          <div className="container">
-            <a className="navbar-brand d-none d-lg-block" href="/">
-              Hope's Recipes
-            </a>
-            <form
-              className="form-inline navbar-form my-2 my-lg-0"
-              onSubmit={this.onSubmit}
-            >
-              <input
-                className="form-control mr-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                onChange={this.onSearchChange}
-              />
-              <button className="btn btn-outline-success my-2" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </nav>
-      </>
-    );
+    history.push(Routes.login);
   }
+
+  const onLogOut = (e: any) => {
+    e.preventDefault();
+    auth.signOut();
+  }
+
+  const onSearch = (e: any) => {
+    e.preventDefault();
+    filterRecipes(searchBarValue);
+    history.push(Routes.recipes);
+  };
+
+  const onSearchChange = (e: any) => {
+    setSearchBarValue(e.target.value);
+  };
+
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container">
+          <Link className="navbar-brand d-none d-lg-block" to={Routes.home}>Hope's Recipes</Link>
+          <form
+            className="form-inline navbar-form my-2 my-lg-0"
+            onSubmit={onSearch}
+          >
+            {currentUser &&
+              <>
+                <h6 className="mb-0 mr-3 font-italic">{currentUser}</h6>
+                <input
+                  className="form-control mr-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  onChange={onSearchChange}
+                />
+                <button className="btn btn-outline-success my-2" type="submit">
+                  Search
+                </button>
+                <button className="btn btn-outline-secondary my-2 ml-4" onClick={onLogOut}>Logout</button>
+              </>
+            }
+            {!currentUser &&
+              <button className="btn btn-outline-secondary my-2 ml-4" onClick={onLogin}>Login</button>
+            }
+          </form>
+        </div>
+      </nav>
+    </>
+  );
 }
+
+const mapStateToProps = (state: ApplicationState) => {
+  return {
+    currentUser: state.currentUser
+  }
+};
 
 const mapDispatchToProps = (dispatch: any) => {
   return {
@@ -69,4 +83,5 @@ const mapDispatchToProps = (dispatch: any) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(withRouter(Navbar as any));
+export const Navbar = withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(NavbarComponent as any));

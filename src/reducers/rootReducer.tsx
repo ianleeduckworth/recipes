@@ -1,24 +1,29 @@
-import { Recipe } from "../data/recipes";
-import recipes from "../data/recipes";
-import { filterRecipes } from "../utilities/filter";
-
 export interface ApplicationState {
-  recipes: Recipe[];
+  currentUser: string | null | undefined;
+  filterBy: string | null | undefined;
 }
 
 const initState: ApplicationState = {
-  recipes: recipes
+  currentUser: undefined,
+  filterBy: undefined
 };
 
 export const rootReducer = (state = initState, action: any) => {
   if (action.type === "FILTER_RECIPES") {
     return {
       ...state,
-      recipes: filterRecipes(recipes, action.filterBy)
+      filterBy: action.filterBy
     };
   }
 
-  return state;
+  if (action.type === "LOGIN") {
+    return {
+      ...state,
+      currentUser: action.user
+    }
+  }
+
+  return {...state};
 };
 
 export default rootReducer;
