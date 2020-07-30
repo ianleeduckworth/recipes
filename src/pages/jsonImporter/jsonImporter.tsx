@@ -1,7 +1,17 @@
 import * as React from 'react';
 import { db, auth } from '../../firebase';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
+import { checkAuthAndLogout } from '../../utilities/authUtilities';
 
-const JsonImporterComponent = () => {
+interface JsonImporterProps extends RouteComponentProps {}
+
+const JsonImporterComponent = (props: JsonImporterProps) => {
+    const { history } = props;
+
+    React.useEffect(() => {
+        checkAuthAndLogout(history);
+    }, [history])
+
     const [jsonObject, setJsonObject] = React.useState('');
 
     const onJsonImportChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -38,18 +48,8 @@ const JsonImporterComponent = () => {
             <p>Paste JSON object here</p>
             <textarea rows={20} className="form-control" id="json-to-import" onChange={onJsonImportChange} />
             <button className="btn btn-outline-primary my-2" onClick={onSubmit}>Submit</button>
-            {/* <div className="alert alert-success mt-3" role="alert">
-                <button
-                    type="button"
-                    className="close"
-                    aria-label="Close"
-                >
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <strong>Success!</strong> "Recipe added"
-            </div> */}
         </div>
     )
 }
 
-export const JsonImporter = JsonImporterComponent;
+export const JsonImporter = withRouter(JsonImporterComponent);

@@ -23,6 +23,7 @@ const NavbarComponent = (props: NavbarProps) => {
   const onLogOut = (e: any) => {
     e.preventDefault();
     auth.signOut();
+    history.push(Routes.home);
   }
 
   const onSearch = (e: any) => {
