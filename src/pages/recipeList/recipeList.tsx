@@ -7,6 +7,7 @@ import { Recipe } from "../../data/recipes";
 import { db } from "../../firebase";
 import { Routes } from "../../data/routes";
 import { ApplicationState } from "../../reducers/rootReducer";
+import { checkAuthAndLogout } from "../../utilities/authUtilities";
 
 export interface RecipeItem {
   id: number;
@@ -30,6 +31,9 @@ const RecipeListComponent = (props: RecipeListProps) => {
 
   React.useEffect(() => {
     let mounted = true;
+
+    checkAuthAndLogout(history);
+    
     async function fetchData() {
       const { docs } = await db.collection('recipes').get();
       const recipes = docs.map(doc => {
@@ -46,7 +50,7 @@ const RecipeListComponent = (props: RecipeListProps) => {
       return () => mounted = false;
     }
     fetchData();
-  }, [filterBy]);
+  }, [filterBy, history]);
 
   const handleClick = (id: string) => {
     history.push(`${Routes.recipe}/${id}`);
