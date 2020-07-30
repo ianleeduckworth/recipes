@@ -38,26 +38,27 @@ const NavbarComponent = (props: NavbarProps) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container">
-          <Link className="navbar-brand d-none d-lg-block" to={Routes.home}>Hope's Recipes</Link>
+        <div className="container d-flex align-items-center">
+          <Link className="navbar-brand mr-auto" to={Routes.home}>Hope's Recipes</Link>
           <form
             className="form-inline navbar-form my-2 my-lg-0"
             onSubmit={onSearch}
           >
+
             {currentUser &&
               <>
-                <h6 className="mb-0 mr-3 font-italic">{currentUser}</h6>
+                <h6 className="d-none d-md-block mb-0 mr-3 font-italic">{currentUser}</h6>
                 <input
-                  className="form-control mr-2"
+                  className="form-control"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                   onChange={onSearchChange}
                 />
-                <button className="btn btn-outline-success my-2" type="submit">
+                <button className="btn btn-outline-success my-2 ml-2" type="submit">
                   Search
                 </button>
-                <button className="btn btn-outline-secondary my-2 ml-4" onClick={onLogOut}>Logout</button>
+                <button className="btn btn-outline-secondary my-2 ml-2" onClick={onLogOut}>Logout</button>
               </>
             }
             {!currentUser &&
