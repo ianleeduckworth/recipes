@@ -3,6 +3,7 @@ import { db, auth } from '../../firebase';
 import { Step } from '../../data/recipes';
 import { withRouter, RouteComponentProps } from 'react-router';
 import { Routes } from '../../data/routes';
+import { checkAuthAndLogout } from '../../utilities/authUtilities';
 
 interface AddRecipeProps extends RouteComponentProps {}
 
@@ -26,6 +27,10 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
     const [simpleSteps, setSimpleSteps] = React.useState(true);
 
     const [error, setError] = React.useState('');
+
+    React.useEffect(() => {
+        checkAuthAndLogout(history);
+    }, [history]);
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -324,7 +329,6 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
                 </div>
             }
         </div>
-
     )
 }
 

@@ -1,8 +1,12 @@
 import * as React from "react";
 import { db } from "../../firebase";
 import { Recipe } from "../../data/recipes";
+import { checkAuthAndLogout } from "../../utilities/authUtilities";
+import { withRouter, RouteComponentProps } from "react-router-dom";
 
-const RecipePageComponent = (props: any) => {
+interface RecipePageProps extends RouteComponentProps {}
+
+const RecipePageComponent = (props: RecipePageProps) => {
   const [recipe, setRecipe] = React.useState({
     id: '',
     title: '',
@@ -16,9 +20,12 @@ const RecipePageComponent = (props: any) => {
     tags: []
   } as Recipe);
 
-  const id = props.match.params.recipe_id;
+  const id = (props.match.params as any).recipe_id;
+  const { history } = props;
 
   React.useEffect(() => {
+    checkAuthAndLogout(history);
+    
     let mounted = true;
     const getData = async () => {
       const doc = await db.collection('recipes').doc(id).get();
@@ -31,7 +38,7 @@ const RecipePageComponent = (props: any) => {
       return () => mounted = false;
     }
     getData();
-  }, [id]);
+  }, [history, id]);
 
   const renderSteps = () => {
     if (typeof recipe.steps === "string") {
@@ -129,4 +136,4 @@ const RecipePageComponent = (props: any) => {
   );
 }
 
-export const RecipePage = RecipePageComponent;
+export const RecipePage = withRouter(RecipePageComponent);
