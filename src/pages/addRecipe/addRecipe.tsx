@@ -1,8 +1,14 @@
 import * as React from 'react';
 import { db, auth } from '../../firebase';
 import { Step } from '../../data/recipes';
+import { withRouter, RouteComponentProps } from 'react-router';
+import { Routes } from '../../data/routes';
 
-const AddRecipeComponent = () => {
+interface AddRecipeProps extends RouteComponentProps {}
+
+const AddRecipeComponent = (props: AddRecipeProps) => {
+    const { history } = props;
+
     const [title, setTitle] = React.useState('');
     const [blurb, setBlurb] = React.useState('');
     const [cookTime, setCookTime] = React.useState('');
@@ -16,11 +22,10 @@ const AddRecipeComponent = () => {
     const [ingredientsInputs, setIngredientsInputs] = React.useState(['ingredients-input-1']);
     const [tagsInputs, setTagsInputs] = React.useState([] as string[]);
     const [stepsInputs, setStepsInputs] = React.useState([{ headerId: 'steps-header-input-1', contentId: 'steps-content-input-1' }] as { headerId: string, contentId: string }[]);
+    
+    const [simpleSteps, setSimpleSteps] = React.useState(true);
 
     const [error, setError] = React.useState('');
-    const [success, setSuccess] = React.useState(false);
-
-    const [simpleSteps, setSimpleSteps] = React.useState(true);
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -33,7 +38,7 @@ const AddRecipeComponent = () => {
         }
 
         try {
-            await db.collection('recipes').add({
+            const { id } = await db.collection('recipes').add({
                 userId: currentUser.uid,
                 title,
                 blurb,
@@ -45,7 +50,7 @@ const AddRecipeComponent = () => {
                 notes,
                 tags
             });
-            setSuccess(true);
+            history.push(`${Routes.recipe}/${id}`);
         } catch (e) {
             setError(e)
         }
@@ -318,22 +323,9 @@ const AddRecipeComponent = () => {
                     <strong>Oh snap!</strong> {error}
                 </div>
             }
-            {success &&
-                <div className="alert alert-success mt-3" role="alert">
-                    <button
-                        type="button"
-                        className="close"
-                        aria-label="Close"
-                        onClick={() => setSuccess(false)}
-                    >
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <strong>Awesome!</strong> {`Recipe "${title}" has been added`}
-                </div>
-            }
         </div>
 
     )
 }
 
-export const AddRecipe = AddRecipeComponent;
+export const AddRecipe = withRouter(AddRecipeComponent);
