@@ -59,7 +59,7 @@ const RecipeListComponent = (props: RecipeListProps) => {
   return (
     <>
       <div className="container">
-        <button className="btn btn-outline-primary my-2" onClick={onAddClick}>+ Add Recipe</button>
+        <button className="btn btn-outline-primary mb-2 mt-4" onClick={onAddClick}>+ Add Recipe</button>
         {recipes && recipes.length > 0 ? (
           <div>
             {recipes.map(item => (
