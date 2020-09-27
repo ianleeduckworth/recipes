@@ -6,6 +6,9 @@ import { withRouter, RouteComponentProps } from "react-router-dom";
 
 interface RecipePageProps extends RouteComponentProps {}
 
+/***
+ * Recipe page component
+ */
 const RecipePageComponent = (props: RecipePageProps) => {
   const [recipe, setRecipe] = React.useState({
     id: '',
