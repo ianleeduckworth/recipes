@@ -3,6 +3,6 @@ export enum Routes {
   recipe = "/recipe",
   recipes = "/recipes",
   login = "/login",
-  addRecipe = "/addRecipe",
+  addEditRecipe = "/addEditRecipe",
   jsonImporter = "/jsonImporter"
 }

@@ -57,7 +57,7 @@ const RecipeListComponent = (props: RecipeListProps) => {
   };
 
   const onAddClick = () => {
-    history.push(Routes.addRecipe);
+    history.push(Routes.addEditRecipe);
   }
 
   return (
