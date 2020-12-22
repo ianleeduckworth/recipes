@@ -4,13 +4,14 @@ export const filterRecipes = (
   recipes: Recipe[],
   filterBy: string
 ): Recipe[] => {
-  if (!filterBy) return recipes;
+  const sortedRecipes = recipes.sort(sortByTitleAlphabetical);
+  if (!filterBy) return sortedRecipes;
 
-  const titleClause = recipes.filter(x =>
+  const titleClause = sortedRecipes.filter(x =>
     x.title.toLowerCase().includes(filterBy.toLowerCase())
   );
 
-  const tagsClause = recipes.filter(
+  const tagsClause = sortedRecipes.filter(
     x => x.tags && x.tags.indexOf(filterBy.toLowerCase()) > -1
   );
 
