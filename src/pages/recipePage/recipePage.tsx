@@ -3,6 +3,7 @@ import { db } from "../../firebase";
 import { Recipe } from "../../data/recipes";
 import { checkAuthAndLogout } from "../../utilities/authUtilities";
 import { withRouter, RouteComponentProps } from "react-router-dom";
+import { Routes } from "../../data/routes";
 
 interface RecipePageProps extends RouteComponentProps {}
 
@@ -62,6 +63,10 @@ const RecipePageComponent = (props: RecipePageProps) => {
     }
   };
 
+  const onEditClick = () => {
+    history.push(`${Routes.addEditRecipe}/${id}`);
+  }
+
   if (!recipe)
     return (
       <div className="container">
@@ -71,6 +76,7 @@ const RecipePageComponent = (props: RecipePageProps) => {
 
   return (
     <div className="container">
+      <button className="btn btn-outline-primary mb-2 mt-4" onClick={onEditClick}>Edit Recipe</button>
       <h1 className="py-3 text-center">{recipe.title}</h1>
       <h5 className="font-italic">{recipe.blurb}</h5>
       {recipe.source && (

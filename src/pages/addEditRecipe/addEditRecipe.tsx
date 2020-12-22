@@ -1,14 +1,16 @@
 import * as React from 'react';
 import { db, auth } from '../../firebase';
-import { Step } from '../../data/recipes';
+import { Recipe, Step } from '../../data/recipes';
 import { withRouter, RouteComponentProps } from 'react-router';
 import { Routes } from '../../data/routes';
 import { checkAuthAndLogout } from '../../utilities/authUtilities';
 
-interface AddRecipeProps extends RouteComponentProps {}
+interface AddRecipeProps extends RouteComponentProps { }
 
 const AddRecipeComponent = (props: AddRecipeProps) => {
     const { history } = props;
+
+    const [recipeId, setRecipeId] = React.useState(undefined as string | undefined);
 
     const [title, setTitle] = React.useState('');
     const [blurb, setBlurb] = React.useState('');
@@ -23,14 +25,75 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
     const [ingredientsInputs, setIngredientsInputs] = React.useState(['ingredients-input-1']);
     const [tagsInputs, setTagsInputs] = React.useState([] as string[]);
     const [stepsInputs, setStepsInputs] = React.useState([{ headerId: 'steps-header-input-1', contentId: 'steps-content-input-1' }] as { headerId: string, contentId: string }[]);
-    
+
     const [simpleSteps, setSimpleSteps] = React.useState(true);
 
     const [error, setError] = React.useState('');
 
+    const [recipeRef, setRecipeRef] = React.useState(undefined as firebase.firestore.DocumentReference<firebase.firestore.DocumentData> | undefined);
+
     React.useEffect(() => {
         checkAuthAndLogout(history);
-    }, [history]);
+
+        let mounted = true;
+        const manageData = async () => {
+            const id = (props.match.params as any).recipe_id as string | undefined;
+            if (id) {
+                setRecipeId(id);
+
+                if (mounted) {
+                    const ref = db.collection('recipes').doc(id);
+                    setRecipeRef(ref);
+
+                    const doc = await ref.get();
+                    const data = doc.data() as Recipe;
+
+                    setTitle(data.title);
+                    setBlurb(data.blurb);
+                    setCookTime(data.cookTime ? data.cookTime : '');
+                    setSource(data.source ? data.source : '');
+                    setServings(data.servings ? data.servings : 0);
+                    setNotes(data.notes ? data.notes : '');
+
+                    setIngredients(data.ingredients);
+                    const ingredientsInputs = [] as string[];
+                    for (let i = 1; i <= data.ingredients.length; i++) {
+                        ingredientsInputs.push(`ingredients-input-${i}`);
+                    }
+                    setIngredientsInputs(ingredientsInputs);
+
+                    if (typeof data.steps === 'string') {
+                        setSteps(data.steps);
+                    } else {
+                        const complexSteps = data.steps as Step[];
+                        setSimpleSteps(false);
+                        setSteps(complexSteps);
+
+                        const stepsInputs = [] as { headerId: string, contentId: string }[];
+                        for (let i = 1; i <= complexSteps.length; i++) {
+                            stepsInputs.push({
+                                headerId: `steps-header-input-${i}`,
+                                contentId: `steps-content-input-${i}`
+                            });
+                        }
+                        setStepsInputs(stepsInputs);
+                    }
+
+                    setTags(data.tags ? data.tags : []);
+                    if (data.tags && data.tags.length > 0) {
+                        const tagsInputs = [] as string[];
+                        for (let i = 1; i <= data.tags.length; i++) {
+                            tagsInputs.push(`tags-input-${i}`);
+                        }
+                        setTagsInputs(tagsInputs);
+                    }
+                }
+            }
+
+            return () => mounted = false;
+        }
+        if (!recipeRef) manageData();
+    }, [history, props.match.params, recipeId, recipeRef, steps]);
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -42,6 +105,33 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
             return;
         }
 
+        //update
+        if (recipeId) {
+            try {
+                if (!recipeRef) {
+                    setError('recipe ref was not created properly');
+                    return;
+                }
+
+                await recipeRef.update({
+                    title,
+                    blurb,
+                    cookTime,
+                    source,
+                    servings,
+                    ingredients,
+                    steps,
+                    notes,
+                    tags
+                });
+                history.push(`${Routes.recipe}/${recipeId}`);
+            } catch (e) {
+                setError(e);
+            }
+            return;
+        }
+
+        //new
         try {
             const { id } = await db.collection('recipes').add({
                 userId: currentUser.uid,
@@ -71,7 +161,7 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
     const onAddTagsInput = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
         const inputNumber = tagsInputs.length + 1;
-        setTagsInputs([...tagsInputs, `ingredients-input-${inputNumber}`]);
+        setTagsInputs([...tagsInputs, `tags-input-${inputNumber}`]);
         setTags([...tags, '']);
     }
 
@@ -110,10 +200,8 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
         e.preventDefault();
         const { id, value } = e.target;
         const index = parseInt(id.split('-')[3]);
-        let step = (steps[index - 1] as Step);
-        step.header = value;
-        let newSteps = (steps as Step[]);
-        newSteps[index - 1] = step;
+        let newSteps = [...steps] as Step[];
+        newSteps[index - 1].header = value;
         setSteps(newSteps);
     }
 
@@ -121,10 +209,8 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
         e.preventDefault();
         const { id, value } = e.target;
         const index = parseInt(id.split('-')[3]);
-        let step = (steps[index - 1] as Step);
-        step.content = value;
-        let newSteps = (steps as Step[]);
-        newSteps[index - 1] = step;
+        let newSteps = [...steps] as Step[];
+        newSteps[index - 1].content = value;
         setSteps(newSteps);
     }
 
@@ -173,28 +259,28 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
 
     return (
         <div className="container">
-            <h1 className="pt-3">Add a recipe</h1>
+            <h1 className="pt-3">{`${recipeId ? 'Edit ' : 'Add a '} recipe`}</h1>
             <form onSubmit={onSubmit} className="pb-4">
                 <div className="container border py-2 my-3">
                     <div className="form-group">
                         <label htmlFor="recipe-title">Title *</label>
-                        <input className="form-control" id="recipe-title" onChange={e => setTitle(e.target.value)} />
+                        <input className="form-control" id="recipe-title" onChange={e => setTitle(e.target.value)} value={title} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="recipe-blurb">Blurb *</label>
-                        <input className="form-control" id="recipe-blurb" onChange={e => setBlurb(e.target.value)} />
+                        <input className="form-control" id="recipe-blurb" onChange={e => setBlurb(e.target.value)} value={blurb} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="recipe-cooktime">Cook time *</label>
-                        <input className="form-control" id="recipe-cooktime" onChange={e => setCookTime(e.target.value)} />
+                        <input className="form-control" id="recipe-cooktime" onChange={e => setCookTime(e.target.value)} value={cookTime} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="recipe-source">Source</label>
-                        <input className="form-control" id="recipe-source" onChange={e => setSource(e.target.value)} />
+                        <input className="form-control" id="recipe-source" onChange={e => setSource(e.target.value)} value={source} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="recipe-servings">Servings *</label>
-                        <input type="number" className="form-control" id="recipe-servings" onChange={e => setServings(parseInt(e.target.value))} />
+                        <input type="number" className="form-control" id="recipe-servings" onChange={e => setServings(parseInt(e.target.value))} value={servings} />
                     </div>
                 </div>
                 <div className="container border py-2 my-3">
@@ -203,7 +289,7 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
                         {ingredientsInputs.map((input, index) =>
                             <div key={input} className="d-flex">
                                 <h6 className="py-3 pr-3">{index + 1}.</h6>
-                                <input className="form-control my-1" id={input} onChange={onIngredientsInputChange} />
+                                <input className="form-control my-1" id={input} onChange={onIngredientsInputChange} value={ingredients[index]} />
                                 {index > 0 && <button type="button" className="close pb-3 px-2" aria-label="Close" onClick={(e) => onRemoveIngredientsInput(e, index)}>
                                     <span aria-hidden="true">&times;</span>
                                 </button>}
@@ -263,18 +349,18 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
                     {simpleSteps &&
                         <div className="form-group">
                             <label htmlFor="recipe-steps">Steps *</label>
-                            <textarea rows={5} className="form-control" id="recipe-steps" onChange={e => setSteps(e.target.value)} />
+                            <textarea rows={5} className="form-control" id="recipe-steps" onChange={e => setSteps(e.target.value)} value={steps as string} />
                         </div>
                     }
                     {!simpleSteps &&
                         <>
-                            {stepsInputs.map((input, index) =>
+                            {typeof steps !== 'string' && stepsInputs.map((input, index) =>
                                 <div key={input.headerId}>
                                     <h6>{index + 1}.</h6>
                                     <div className="form-group">
                                         <label htmlFor="recipe-source">Header</label>
                                         <div className="d-flex">
-                                            <input className="form-control" id={input.headerId} onChange={onStepsHeaderInputChange} />
+                                            <input className="form-control" id={input.headerId} onChange={onStepsHeaderInputChange} value={(steps as Step[])[index].header} />
                                             {index > 0 && <button type="button" className="close pb-3 px-2" aria-label="Close" onClick={(e) => onRemoveStepsInput(e, index)}>
                                                 <span aria-hidden="true">&times;</span>
                                             </button>}
@@ -282,7 +368,7 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="recipe-source">Content</label>
-                                        <textarea rows={5} className="form-control" id={input.contentId} onChange={onStepsContentInputChange} />
+                                        <textarea rows={5} className="form-control" id={input.contentId} onChange={onStepsContentInputChange} value={(steps as Step[])[index].content} />
                                     </div>
                                 </div>
                             )}
@@ -296,7 +382,7 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
                         {tagsInputs.map((input, index) =>
                             <div key={input} className="d-flex">
                                 <h6 className="py-3 pr-3">{index + 1}.</h6>
-                                <input className="form-control my-1" id={input} onChange={onTagsInputChange} />
+                                <input className="form-control my-1" id={input} onChange={onTagsInputChange} value={tags[index]} />
                                 <button type="button" className="close pb-3 px-2" aria-label="Close" onClick={(e) => onRemoveTagsInput(e, index)}>
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -310,7 +396,7 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
                 <div className="container border py-2 my-3">
                     <div className="form-group">
                         <label htmlFor="recipe-notes">Notes</label>
-                        <textarea rows={5} className="form-control" id="recipe-notes" onChange={e => setNotes(e.target.value)} />
+                        <textarea rows={5} className="form-control" id="recipe-notes" onChange={e => setNotes(e.target.value)} value={notes} />
                     </div>
                 </div>
                 <button className="btn btn-outline-primary" type="submit">Submit</button>

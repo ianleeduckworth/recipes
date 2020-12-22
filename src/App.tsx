@@ -5,7 +5,7 @@ import { Home } from "./pages/landing/home";
 import { Navbar } from "./components/navbar/navbar";
 import { RecipeList } from "./pages/recipeList/recipeList";
 import { RecipePage } from "./pages/recipePage/recipePage";
-import { AddRecipe } from "./pages/addRecipe/addRecipe";
+import { AddRecipe } from "./pages/addEditRecipe/addEditRecipe";
 import { Login } from "./pages/login/login";
 import { auth } from "./firebase";
 import { store } from './index';
@@ -27,8 +27,8 @@ export class App extends React.Component {
         <Route path={Routes.home} component={Home} exact />
         <Route path={Routes.recipes} component={RecipeList} exact />
         <Route path={Routes.login} component={Login} exact />
-        <Route path={Routes.addRecipe} component={AddRecipe} exact />
         <Route path={Routes.jsonImporter} component={JsonImporter} exact />
+        <Route path={`${Routes.addEditRecipe}/:recipe_id?`} component={AddRecipe} />
         <Route path={`${Routes.recipe}/:recipe_id`} component={RecipePage} />
       </>
     );
