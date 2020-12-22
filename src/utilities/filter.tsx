@@ -11,7 +11,7 @@ export const filterRecipes = (
   );
 
   const tagsClause = recipes.filter(
-    x => x.tags && x.tags.indexOf(filterBy) > -1
+    x => x.tags && x.tags.indexOf(filterBy.toLowerCase()) > -1
   );
 
   return unique([...titleClause, ...tagsClause]);
