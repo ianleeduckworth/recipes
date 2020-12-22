@@ -43,8 +43,8 @@ const RecipeListComponent = (props: RecipeListProps) => {
       }) as Recipe[];
 
       if (mounted) {
-        const filteredRecipes = filterRecipes(recipes, filterBy)
-        setRecipes(filteredRecipes as Recipe[])
+        const filteredRecipes = filterRecipes(recipes, filterBy);
+        setRecipes(filteredRecipes as Recipe[]);
       }
 
       return () => mounted = false;
