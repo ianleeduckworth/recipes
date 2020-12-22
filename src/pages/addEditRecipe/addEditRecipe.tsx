@@ -418,4 +418,4 @@ const AddRecipeComponent = (props: AddRecipeProps) => {
     )
 }
 
-export const AddRecipe = withRouter(AddRecipeComponent);
+export const AddEditRecipe = withRouter(AddRecipeComponent);
