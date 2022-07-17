@@ -4,7 +4,7 @@ export const filterRecipes = (
   recipes: Recipe[],
   filterBy: string
 ): Recipe[] => {
-  const lowercaseFilterBy = filterBy.toLowerCase();
+  const lowercaseFilterBy = filterBy.toLowerCase().trim();
 
   const sortedRecipes = recipes.sort(sortByTitleAlphabetical);
   if (!filterBy) return sortedRecipes;
