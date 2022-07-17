@@ -7,15 +7,33 @@ export const filterRecipes = (
   const sortedRecipes = recipes.sort(sortByTitleAlphabetical);
   if (!filterBy) return sortedRecipes;
 
-  const titleClause = sortedRecipes.filter(x =>
-    x.title.toLowerCase().includes(filterBy.toLowerCase())
+  const titleClause = sortedRecipes.filter((sortedRecipe) =>
+    sortedRecipe.title.toLowerCase().includes(filterBy.toLowerCase())
   );
 
   const tagsClause = sortedRecipes.filter(
-    x => x.tags && x.tags.indexOf(filterBy.toLowerCase()) > -1
+    (sortedRecipe) =>
+      sortedRecipe.tags &&
+      sortedRecipe.tags.indexOf(filterBy.toLowerCase()) > -1
   );
 
-  return unique([...titleClause, ...tagsClause]);
+  const ingredientsClause = sortedRecipes.filter(
+    (sortedRecipe) => {
+      const lowercaseIngredients = sortedRecipe.ingredients.map((x) =>
+        x.toLowerCase()
+      );
+      for (let i = 0; i < lowercaseIngredients.length; i++) {
+        const ingredient = lowercaseIngredients[i];
+        if (ingredient.indexOf(filterBy) !== -1) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+  );
+
+  return unique([...titleClause, ...tagsClause, ...ingredientsClause]);
 };
 
 export const sortByTitleAlphabetical = (a: Recipe, b: Recipe) => {
