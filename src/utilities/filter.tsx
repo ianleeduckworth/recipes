@@ -28,6 +28,8 @@ export const filterRecipes = (
           return true;
         }
       }
+
+      return false;
     }
   );
 
