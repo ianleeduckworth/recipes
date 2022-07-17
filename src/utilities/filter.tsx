@@ -4,17 +4,19 @@ export const filterRecipes = (
   recipes: Recipe[],
   filterBy: string
 ): Recipe[] => {
+  const lowercaseFilterBy = filterBy.toLowerCase();
+
   const sortedRecipes = recipes.sort(sortByTitleAlphabetical);
   if (!filterBy) return sortedRecipes;
 
   const titleClause = sortedRecipes.filter((sortedRecipe) =>
-    sortedRecipe.title.toLowerCase().includes(filterBy.toLowerCase())
+    sortedRecipe.title.toLowerCase().includes(lowercaseFilterBy)
   );
 
   const tagsClause = sortedRecipes.filter(
     (sortedRecipe) =>
       sortedRecipe.tags &&
-      sortedRecipe.tags.indexOf(filterBy.toLowerCase()) > -1
+      sortedRecipe.tags.indexOf(lowercaseFilterBy) > -1
   );
 
   const ingredientsClause = sortedRecipes.filter(
@@ -24,7 +26,7 @@ export const filterRecipes = (
       );
       for (let i = 0; i < lowercaseIngredients.length; i++) {
         const ingredient = lowercaseIngredients[i];
-        if (ingredient.indexOf(filterBy) !== -1) {
+        if (ingredient.indexOf(lowercaseFilterBy) !== -1) {
           return true;
         }
       }
